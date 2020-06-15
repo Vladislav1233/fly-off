@@ -1,0 +1,1 @@
+"use strict";$(".js-rent-check input").closest(".b-calculator-page__group").next().find("input").prop("disabled",!0),$(".js-rent-check input").on("change",function(){var e=$(this).closest(".b-calculator-page__group").next().find("input");$(this).is(":checked")?e.prop("disabled",!1):e.prop("disabled",!0)});
