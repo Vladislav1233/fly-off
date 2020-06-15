@@ -1,0 +1,35 @@
+/* 1024++  */
+.b-ribbon {
+    margin-top: -20px;
+    margin-bottom: -20px;
+    margin-left: -1px;
+    margin-right: -1px;
+
+    &__text {
+        height: 40px;
+        font-size: 24px;
+        padding: 6px 0px;
+    }
+
+    &::before,
+    &::after {
+        content: "";
+        display: block;
+        position: absolute;
+        width: 0;
+        height: 0;
+        top: -10px;
+        z-index: -2;
+        border: 20px solid #EB6907;
+    }
+
+    &::before {
+        left: -41px;
+        border-left-color: transparent;
+    }
+
+    &::after {
+        right: -41px;
+        border-right-color: transparent;
+    }
+}

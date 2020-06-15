@@ -1,0 +1,11 @@
+/*
+* Основные стили, подключаемые на всех страницах
+*/
+
+@import "partials/variables.scss";
+@import "partials/fonts.scss";
+@import "partials/theme.scss";
+@import "partials/icons.scss";
+@import "partials/normalize.scss";
+@import "../js/node_modules/air-datepicker/dist/css/datepicker.min.css";
+@import "../js/node_modules/ion-rangeslider/css/ion.rangeSlider.min.css";

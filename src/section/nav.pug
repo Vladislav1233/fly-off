@@ -1,0 +1,10 @@
+include ./telephone
+
+mixin nav(data)
+    +b('nav').nav.js-nav
+        +e('ul').list
+            each item in data
+                +e.item
+                    +e('a')(href=item.href, title=item.name).link #{item.name}
+
+        +telephone().--in-nav

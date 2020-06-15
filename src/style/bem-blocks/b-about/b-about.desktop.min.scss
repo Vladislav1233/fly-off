@@ -1,0 +1,23 @@
+/* 1024++  */
+.b-about {
+    margin-bottom: -20px;
+
+    &__list {
+        margin-left: 0;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__item {
+        width: auto;
+        padding-left: 0;
+    }
+
+    &__text {
+        font-size: 18px;
+    }
+
+    &__text-info {
+        margin-bottom: 90px;
+    }
+}

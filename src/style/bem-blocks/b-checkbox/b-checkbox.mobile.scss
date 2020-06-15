@@ -1,0 +1,64 @@
+.b-checkbox {
+
+    &__input {
+        display: none;
+    }
+
+    &__name {
+        padding-left: 30px;
+        position: relative;
+        width: auto;
+        display: inline-block;
+        cursor: pointer;
+
+        &::before,
+        &::after {
+            content: '';
+            width: 20px;
+            height: 20px;
+            position: absolute;
+            top: 0px;
+            left: 0;
+            border: 1px solid #1ca1d8;
+        }
+
+        &::before {
+            transition: background-color $animation-time;
+        }
+
+        &:after {
+            border: none;
+            background-image: url('../images/inhtml/check.svg');
+            background-repeat: no-repeat;
+            background-position: center;
+            opacity: 0;
+            transition: opacity $animation-time;
+        }
+    }
+
+    &__input:checked + &__name:after {
+        opacity: 1;
+    }
+
+    &__input:checked + &__name:before {
+        background-color: #1ca1d8;
+    }
+
+    &__text {
+        font-size: 14px;
+        color: #181818;
+        vertical-align: middle;
+    }
+
+    &__input:disabled + &__name::before {
+        background-color: #eee;
+        border-color: #eee;
+    }
+
+    &--range & {
+
+        &__text {
+            font-size: 16px;
+        }
+    }
+}

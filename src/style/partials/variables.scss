@@ -1,0 +1,108 @@
+// Fonts
+$font-base: "futura-book";
+
+// Animation
+$animation-time: 0.3s;
+$double-animation: 0.6s;
+
+// MediaQ - теперо подключаются в layout
+// $desktop: "(max-width: 1360px)";
+// $desktop-min: "(max-width: 1024px)";
+// $tablet: "(min-width: 768px)";
+
+// @mixin font-montserrat ($weight){
+//     font-family: 'montserrat';
+//     font-weight: $weight;
+// }
+// @mixin roboto ($weight){
+//     font-weight: $weight;
+// }
+@mixin icon-size($size) {
+    height: $size;
+    line-height: $size;
+    font-size: $size;
+}
+@mixin ofi {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    height: 100%;
+    object-fit: cover;
+    font-family: 'object-fit: cover;';
+}
+@mixin flex($grow, $shrink, $basis) {
+    flex-grow: $grow;
+    flex-shrink: $shrink;
+    flex-basis: $basis;
+}
+
+// Основные цвета
+$cl-transparent: transparent;
+$cl-white-transparent-07: rgba(255,255,255,0.7);
+$cl-white: #ffffff;
+$cl-black: #000000;
+$cl-gray: #a1a1a1;
+$cl-dark-grey: #737373;
+$cl-light-gray: #f3f3f3;
+$cl-pink: #d42386;
+$cl-light-pink: #ec1d91;
+$cl-dark-pink: #bd1071;
+$cl-red: #ff3900;
+$cl-dark-red: #e03b0e;
+$gainsborough: #e0e0e0;
+$pearlDarkGray: #818181;
+$smokyWhite: #F9F8F9;
+
+$main-slider: #111111;
+$cl-begin-gray: #cecece;
+
+$cl-lighter-grey: #f3f3f3;
+
+// Colors
+// Цвета theme. Не трогать!!!
+$cl-theme-global: $cl-black;
+$cl-theme-link: $cl-black;
+$cl-theme-link-hover: $cl-gray;
+$cl-theme-grey: $cl-gray;
+
+// Цвета текста
+$cl-font-main: $cl-black;
+$cl-font-light: $cl-gray;
+$cl-font-white: $cl-white;
+
+/* Добавлять по категориям cl-элемент
+/* $cl-button-bg: $Var */
+
+// Общий док
+$background: $cl-white;
+$main-background: $cl-light-gray;
+
+// цвет тени
+// $shadow: $cl-shadow-gray;
+
+// стрелки
+$arrow: $cl-white;
+$arrow-black: $cl-black;
+$arrow-hover: $cl-light-pink;
+
+// ------
+// Миксины
+// ------ 
+@mixin scope-paragraph {
+    font-size: 24px;
+    line-height: 26px;
+    text-align: center;
+    color: #004880;
+    margin: 0;
+}
+
+// ------
+// ЦВЕТА
+// ------
+
+// // Alpha colors
+// // $cl-alpha: rgba(255, 255, 255, .2); // цвет + описание
+
+// Генерируемые цвета - ниже не пишем ничего сами )

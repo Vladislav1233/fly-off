@@ -1,0 +1,23 @@
+/* 320++  */
+.b-item-service {
+    text-align: center;
+    display: inline-block;
+
+    &__name,
+    &__price {
+        margin: 0;
+        font-size: 18px;
+        line-height: 26px;
+        color: #004880;
+    }
+
+    &__price {
+        font-family: 'futura-bold';
+    }
+
+    &__icon {
+        font-size: 0px;
+        line-height: 0;
+        margin-bottom: 11px;
+    }
+}

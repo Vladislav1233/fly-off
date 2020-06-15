@@ -1,0 +1,50 @@
+.b-footer {
+    padding: 70px 0 80px;
+
+    &__quote {
+        order: 2;
+    }
+
+    &__nav {
+        order: 3;
+    }
+
+    &__contact-info {
+        order: 4;
+    }
+
+    &__social {
+        order: 5;
+    }
+
+    &__logo,
+    &__nav {
+        padding: 0;
+        width: 35%;
+    }
+
+    &__tel,
+    &__contact-info {
+        padding: 0;
+        width: 45%;
+        padding-left: 45px;
+    }
+
+    &__quote,
+    &__social {
+        padding: 0;
+        width: 20%;
+        padding-left: 0px;
+    }
+
+    &__logo,
+    &__tel,
+    &__quote {
+        margin-bottom: 36px;
+    }
+
+    &__tel {
+        order: 1;
+        padding-top: 15px;
+    }
+}

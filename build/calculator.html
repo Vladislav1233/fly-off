@@ -1,0 +1,675 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimal-ui, user-scalable=no">
+    <meta name="skype_toolbar" content="skype_toolbar_parser_compatible">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="google" content="notranslate">
+    <meta name="format-detection" content="telephone=no">
+    <link media="none" onload="if(media!='all') media='all'" type="text/css" rel="stylesheet" href="css/main.css?10">
+    <link href="css/mobile.css?10" rel="stylesheet">
+    <link href="css/tablet.css?10" rel="stylesheet" media="(min-width: 768px)">
+    <link href="css/desktop-min.css?10" rel="stylesheet" media="(min-width: 1024px)">
+    <link href="css/desktop.css?10" rel="stylesheet" media="(min-width: 1360px)">
+    <title>Калькулятор</title>
+    <meta name="description" content="">
+    <meta name="keywords" content=""><!--[if lte IE 9]>
+    <script src="js/html5shiv/html5shiv.min.js"></script><![endif]-->
+  </head>
+  <body>
+        <header class="b-header">
+          <div class="b-container">
+            <div class="b-header__content">
+              <div class="b-header__logo"><a class="b-logo" href="/" title="Абсолют страхование"><img src="./images/inhtml/logo.png" alt="Логотип абсолют страхование"></a>
+              </div>
+              <div class="b-header__content-right">
+                <div class="b-header__tel"><a class="b-telephone" href="tel:+74959871838" title="Позвонить">+7 (495) 987-18-38</a>
+                </div>
+                <div class="b-header__hamburger"><a class="b-hamburger b-hamburger--color js-hamburger" href="javascript:void(0);" title=""><span class="b-hamburger__hamburger-icon"></span></a>
+                </div>
+                <div class="b-header__nav">
+                  <nav class="b-nav js-nav">
+                    <ul class="b-nav__list">
+                      <li class="b-nav__item"><a class="b-nav__link" href="/o-kompanii/" title="О компании">О компании</a>
+                      </li>
+                      <li class="b-nav__item"><a class="b-nav__link" href="#buy-policy" title="Купить полис">Купить полис</a>
+                      </li>
+                      <li class="b-nav__item"><a class="b-nav__link" href="#feedback" title="Обратная связь">Обратная связь</a>
+                      </li>
+                    </ul><a class="b-telephone b-telephone--in-nav" href="tel:+74959871838" title="Позвонить">+7 (495) 987-18-38</a>
+                  </nav>
+                </div>
+              </div>
+            </div>
+          </div>
+        </header>
+    <div class="b-page-wrapper">
+      <main class="b-main" role="main">
+        <section class="b-calculator-page"><a class="b-calculator-page__back" href="#" title="Назад">
+           <svg width="73" height="28" viewBox="0 0 73 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M1.5 14H72.5M1.5 14L14.5 1M1.5 14L14.5 27" stroke="#41B6E6"/>
+</svg>Назад</a>
+          <div class="b-tab js-tabs">
+            <div class="b-tab__select js-tab-select">Путешествие
+              <div class="b-tab__select-icon"><svg width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M1 1L6 6L11 1" stroke="#9397A0" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+              </div>
+            </div>
+            <ul class="b-tab__nav">
+              <li class="b-tab__item-nav"> <a class="b-tab__link" href="#tab-1">
+                 Путешествие</a>
+              </li>
+              <li class="b-tab__item-nav"> <a class="b-tab__link" href="#tab-2">Путешествие “Апгрейд”</a>
+              </li>
+              <li class="b-tab__item-nav"><a class="b-tab__link" href="#tab-3">Страхование квартиры</a>
+              </li>
+              <li class="b-tab__item-nav"><a class="b-tab__link" href="#tab-4">Несчастный случай</a>
+              </li>
+            </ul>
+          </div>
+          <section class="b-calculator-page__content" id="tab-1">
+            <h1 class="b-calculator-page__title">Рассчитать страховку для выезда за границу
+            </h1>
+            <form class="b-calculator-page__form">
+              <div class="b-calculator-page__group">
+                <div class="b-calculator-page__group-name">Тип полиса
+                </div>
+                <div class="b-radio">
+                  <div class="b-radio__wrapper"><input class="b-radio__field" type="radio" id="travel_for-trip" name="travel_type-police" checked="checked"/>
+                    <label class="b-radio__label" for="travel_for-trip">На одну поездку
+                    </label>
+                  </div>
+                  <div class="b-radio__wrapper"><input class="b-radio__field" type="radio" id="travel_annual-policy" name="travel_type-police"/>
+                    <label class="b-radio__label" for="travel_annual-policy">Годовой полис
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <div class="b-calculator-page__group-inline">
+                <div class="b-calculator-page__group b-calculator-page__group--inline">
+                  <div class="b-calculator-page__group-name">Период поездки, с
+                  </div>
+                  <div class="b-input b-input--calc"><input class="b-input__input-field b-input__input-field--calc" id="travel_start-period" type="tel" placeholder="дд.мм.гг" name="travel_start-period"/>
+                  </div>
+                </div>
+                <div class="b-calculator-page__group b-calculator-page__group--inline">
+                  <div class="b-calculator-page__group-name">Период поездки, по
+                  </div>
+                  <div class="b-input b-input--calc"><input class="b-input__input-field b-input__input-field--calc" id="travel_end-period" type="tel" placeholder="дд.мм.гг" name="travel_end-period"/>
+                  </div>
+                </div>
+              </div>
+              <div class="b-calculator-page__group">
+                <div class="b-calculator-page__group-name">Страна поездки
+                </div>
+                <div class="b-input b-input--calc"><input class="b-input__input-field b-input__input-field--calc" id="travel_country" type="text" placeholder="" name="travel_country"/>
+                </div>
+                <div class="b-calculator-page__checkbox-group">
+                  <div class="b-calculator-page__checkbox-item">
+                    <div class="b-checkbox"><input class="b-checkbox__input" type="checkbox" name="travel_schengen-countries" id="travel_schengen-countries" value="Страны Шенгенского Соглашения"/>
+                      <label class="b-checkbox__name" for="travel_schengen-countries"><span class="b-checkbox__text">Страны Шенгенского Соглашения</span>
+                      </label>
+                    </div>
+                  </div>
+                  <div class="b-calculator-page__checkbox-item">
+                    <div class="b-checkbox"><input class="b-checkbox__input" type="checkbox" name="travel_active-recreation" id="travel_active-recreation" value="Активный отдых"/>
+                      <label class="b-checkbox__name" for="travel_active-recreation"><span class="b-checkbox__text">Активный отдых</span><span class="b-tooltip b-tooltip--question"><span class="b-tooltip__icon">?</span><span class="b-tooltip__text">Подсказка</span></span>
+                      </label>
+                    </div>
+                  </div>
+                  <div class="b-calculator-page__checkbox-item">
+                    <div class="b-checkbox"><input class="b-checkbox__input" type="checkbox" name="travel_already-traveling" id="travel_already-traveling" value="Уже путешествую"/>
+                      <label class="b-checkbox__name" for="travel_already-traveling"><span class="b-checkbox__text">Уже путешествую</span>
+                      </label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="b-calculator-page__group js-place-more">
+                <div class="b-calculator-page__block-clone js-block-more">
+                  <div class="b-calculator-page__group-name">Возраст <span class="js-count-traveler">1</span>-го путешественника
+                  </div>
+                  <div class="b-radio b-radio--large">
+                    <div class="b-radio__wrapper"><input class="b-radio__field" type="radio" id="travel_age-min" name="travel_count-traveler" checked="checked"/>
+                      <label class="b-radio__label" for="travel_age-min">от 1 до 3 лет
+                      </label>
+                    </div>
+                    <div class="b-radio__wrapper"><input class="b-radio__field" type="radio" id="travel_age-medium" name="travel_count-traveler"/>
+                      <label class="b-radio__label" for="travel_age-medium">от 4 до 28 лет
+                      </label>
+                    </div>
+                    <div class="b-radio__wrapper"><input class="b-radio__field" type="radio" id="travel_age-large" name="travel_count-traveler"/>
+                      <label class="b-radio__label" for="travel_age-large">от 29 до 65 лет
+                      </label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="b-calculator-page__group">
+                <div class="b-calculator-page__button"><a class="b-button b-button--font-small js-button-more" href="javascript:void(0);" title="+ добавить путешественника">+ добавить путешественника</a>
+                </div>
+              </div>
+              <div class="b-calculator-page__group">
+                <div class="b-calculator-page__group-name">Промокод если есть
+                </div>
+                <div class="b-input b-input--calc"><input class="b-input__input-field b-input__input-field--calc" id="travel_promocode" type="text" placeholder="" name="travel_promocode"/>
+                </div>
+              </div>
+              <div class="b-calculator-page__button">
+                <button class="b-button b-button--font-small">Рассчитать
+                </button>
+              </div>
+            </form>
+          </section>
+          <section class="b-calculator-page__content" id="tab-2">
+            <h1 class="b-calculator-page__title">Рассчитать страховку для выезда за границу
+            </h1>
+            <form class="b-calculator-page__form">
+              <div class="b-calculator-page__group">
+                <div class="b-calculator-page__group-name">Тип полиса
+                </div>
+                <div class="b-radio">
+                  <div class="b-radio__wrapper"><input class="b-radio__field" type="radio" id="travel-upgrade_for-trip" name="travel-upgrade_type-police" checked="checked"/>
+                    <label class="b-radio__label" for="travel-upgrade_for-trip">На одну поездку
+                    </label>
+                  </div>
+                  <div class="b-radio__wrapper"><input class="b-radio__field" type="radio" id="travel-upgrade_annual-policy" name="travel-upgrade_type-police"/>
+                    <label class="b-radio__label" for="travel-upgrade_annual-policy">Годовой полис
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <div class="b-calculator-page__group-inline">
+                <div class="b-calculator-page__group b-calculator-page__group--inline">
+                  <div class="b-calculator-page__group-name">Период поездки, с
+                  </div>
+                  <div class="b-input b-input--calc"><input class="b-input__input-field b-input__input-field--calc" id="travel-upgrade_start-period" type="tel" placeholder="дд.мм.гг" name="travel-upgrade_start-period"/>
+                  </div>
+                </div>
+                <div class="b-calculator-page__group b-calculator-page__group--inline">
+                  <div class="b-calculator-page__group-name">Период поездки, по
+                  </div>
+                  <div class="b-input b-input--calc"><input class="b-input__input-field b-input__input-field--calc" id="travel-upgrade_end-period" type="tel" placeholder="дд.мм.гг" name="travel-upgrade_end-period"/>
+                  </div>
+                </div>
+              </div>
+              <div class="b-calculator-page__group">
+                <div class="b-calculator-page__group-name">Страна поездки
+                </div>
+                <div class="b-input b-input--calc"><input class="b-input__input-field b-input__input-field--calc" id="travel-upgrade_country" type="text" placeholder="" name="travel-upgrade_country"/>
+                </div>
+                <div class="b-calculator-page__checkbox-group">
+                  <div class="b-calculator-page__checkbox-item">
+                    <div class="b-checkbox"><input class="b-checkbox__input" type="checkbox" name="travel-upgrade_schengen-countries" id="travel-upgrade_schengen-countries" value="Страны Шенгенского Соглашения"/>
+                      <label class="b-checkbox__name" for="travel-upgrade_schengen-countries"><span class="b-checkbox__text">Страны Шенгенского Соглашения</span>
+                      </label>
+                    </div>
+                  </div>
+                  <div class="b-calculator-page__checkbox-item">
+                    <div class="b-checkbox"><input class="b-checkbox__input" type="checkbox" name="travel-upgrade_active-recreation" id="travel-upgrade_active-recreation" value="Активный отдых"/>
+                      <label class="b-checkbox__name" for="travel-upgrade_active-recreation"><span class="b-checkbox__text">Активный отдых</span><span class="b-tooltip b-tooltip--question"><span class="b-tooltip__icon">?</span><span class="b-tooltip__text">Подсказка</span></span>
+                      </label>
+                    </div>
+                  </div>
+                  <div class="b-calculator-page__checkbox-item">
+                    <div class="b-checkbox"><input class="b-checkbox__input" type="checkbox" name="travel-upgrade_already-traveling" id="travel-upgrade_already-traveling" value="Уже путешествую"/>
+                      <label class="b-checkbox__name" for="travel-upgrade_already-traveling"><span class="b-checkbox__text">Уже путешествую</span>
+                      </label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="b-calculator-page__group js-place-more">
+                <div class="b-calculator-page__block-clone js-block-more">
+                  <div class="b-calculator-page__group-name">Возраст <span class="js-count-traveler">1</span>-го путешественника
+                  </div>
+                  <div class="b-radio b-radio--large">
+                    <div class="b-radio__wrapper"><input class="b-radio__field" type="radio" id="travel-upgrade_age-min" name="travel-upgrade_count-traveler" checked="checked"/>
+                      <label class="b-radio__label" for="travel-upgrade_age-min">от 1 до 3 лет
+                      </label>
+                    </div>
+                    <div class="b-radio__wrapper"><input class="b-radio__field" type="radio" id="travel-upgrade_age-medium" name="travel-upgrade_count-traveler"/>
+                      <label class="b-radio__label" for="travel-upgrade_age-medium">от 4 до 28 лет
+                      </label>
+                    </div>
+                    <div class="b-radio__wrapper"><input class="b-radio__field" type="radio" id="travel-upgrade_age-large" name="travel-upgrade_count-traveler"/>
+                      <label class="b-radio__label" for="travel-upgrade_age-large">от 29 до 65 лет
+                      </label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="b-calculator-page__group">
+                <div class="b-calculator-page__button"><a class="b-button b-button--font-small js-button-more" href="javascript:void(0);" title="+ добавить путешественника">+ добавить путешественника</a>
+                </div>
+              </div>
+              <div class="b-calculator-page__group">
+                <div class="b-calculator-page__group-name">Промокод если есть
+                </div>
+                <div class="b-input b-input--calc"><input class="b-input__input-field b-input__input-field--calc" id="travel-upgrade_promocode" type="text" placeholder="" name="travel-upgrade_promocode"/>
+                </div>
+              </div>
+              <div class="b-calculator-page__button">
+                <button class="b-button b-button--font-small">Рассчитать
+                </button>
+              </div>
+            </form>
+          </section>
+          <section class="b-calculator-page__content" id="tab-3">
+            <h1 class="b-calculator-page__title">Рассчитать страховку для квартиры
+            </h1>
+            <form class="b-calculator-page__form b-calculator-page__form--range">
+              <div class="b-calculator-page__group">
+                <div class="b-range-group">
+                  <div class="b-range-group__check">
+                    <div class="b-checkbox b-checkbox--range js-toggle-range"><input class="b-checkbox__input" type="checkbox" name="apartment_structural-element" id="apartment_structural-element" value="Конструктивные элементы"/>
+                      <label class="b-checkbox__name b-checkbox__name--range js-toggle-range" for="apartment_structural-element"><span class="b-checkbox__text">Конструктивные элементы</span><span class="b-tooltip b-tooltip--question"><span class="b-tooltip__icon">?</span><span class="b-tooltip__text">Подсказка</span></span>
+                      </label>
+                    </div>
+                  </div>
+                  <div class="b-range-group__range-wrapper"><input class="b-range-group__range js-range-slider" data-min="100000" data-max="5000000" type="text"/>
+                  </div>
+                  <div class="b-range-group__input">
+                    <div class="b-input b-input--calc"><input class="b-input__input-field js-range-input js-range-input--calc" id="apartment_structural-element-input" type="text" placeholder="" name="apartment_structural-element-input" disabled="disabled"/>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="b-calculator-page__group">
+                <div class="b-range-group">
+                  <div class="b-range-group__check">
+                    <div class="b-checkbox b-checkbox--range js-toggle-range"><input class="b-checkbox__input" type="checkbox" name="apartment_interior-decoration" id="apartment_interior-decoration" value="Внутренняя отделка"/>
+                      <label class="b-checkbox__name b-checkbox__name--range js-toggle-range" for="apartment_interior-decoration"><span class="b-checkbox__text">Внутренняя отделка</span><span class="b-tooltip b-tooltip--question"><span class="b-tooltip__icon">?</span><span class="b-tooltip__text">Подсказка</span></span>
+                      </label>
+                    </div>
+                  </div>
+                  <div class="b-range-group__range-wrapper"><input class="b-range-group__range js-range-slider" data-min="200000" data-max="5000000" type="text"/>
+                  </div>
+                  <div class="b-range-group__input">
+                    <div class="b-input b-input--calc"><input class="b-input__input-field js-range-input js-range-input--calc" id="apartment_interior-decoration-input" type="text" placeholder="" name="apartment_interior-decoration-input" disabled="disabled"/>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="b-calculator-page__group">
+                <div class="b-range-group">
+                  <div class="b-range-group__check">
+                    <div class="b-checkbox b-checkbox--range js-toggle-range"><input class="b-checkbox__input" type="checkbox" name="apartment_movable-property" id="apartment_movable-property" value="Движимое имущество"/>
+                      <label class="b-checkbox__name b-checkbox__name--range js-toggle-range" for="apartment_movable-property"><span class="b-checkbox__text">Движимое имущество</span><span class="b-tooltip b-tooltip--question"><span class="b-tooltip__icon">?</span><span class="b-tooltip__text">Подсказка</span></span>
+                      </label>
+                    </div>
+                  </div>
+                  <div class="b-range-group__range-wrapper"><input class="b-range-group__range js-range-slider" data-min="200000" data-max="1000000" type="text"/>
+                  </div>
+                  <div class="b-range-group__input">
+                    <div class="b-input b-input--calc"><input class="b-input__input-field js-range-input js-range-input--calc" id="apartment_movable-property-input" type="text" placeholder="" name="apartment_movable-property-input" disabled="disabled"/>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="b-calculator-page__group">
+                <div class="b-range-group">
+                  <div class="b-range-group__check">
+                    <div class="b-checkbox b-checkbox--range js-toggle-range"><input class="b-checkbox__input" type="checkbox" name="apartment_civil-liability" id="apartment_civil-liability" value="Гражданская ответственность"/>
+                      <label class="b-checkbox__name b-checkbox__name--range js-toggle-range" for="apartment_civil-liability"><span class="b-checkbox__text">Гражданская ответственность</span><span class="b-tooltip b-tooltip--question"><span class="b-tooltip__icon">?</span><span class="b-tooltip__text">Подсказка</span></span>
+                      </label>
+                    </div>
+                  </div>
+                  <div class="b-range-group__range-wrapper"><input class="b-range-group__range js-range-slider" data-min="100000" data-max="500000" type="text"/>
+                  </div>
+                  <div class="b-range-group__input">
+                    <div class="b-input b-input--calc"><input class="b-input__input-field js-range-input js-range-input--calc" id="apartment_civil-liability-input" type="text" placeholder="" name="apartment_civil-liability-input" disabled="disabled"/>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="b-calculator-page__group">
+                <div class="b-checkbox js-rent-check"><input class="b-checkbox__input" type="checkbox" name="apartment_rent" id="apartment_rent" value="Квартира сдается в аренду"/>
+                  <label class="b-checkbox__name js-rent-check" for="apartment_rent"><span class="b-checkbox__text">Квартира сдается в аренду</span><span class="b-tooltip b-tooltip--question"><span class="b-tooltip__icon">?</span><span class="b-tooltip__text">Подсказка</span></span>
+                  </label>
+                </div>
+              </div>
+              <div class="b-calculator-page__group">
+                <div class="b-slidedown b-slidedown--column js-slidedown js-rent-condition">
+                  <div class="b-slidedown__head">
+                    <div class="b-slidedown__title">От каких рисков застраховано
+                    </div>
+                    <div class="b-slidedown__icon">
+                    </div>
+                  </div>
+                  <div class="b-slidedown__content">
+                    <div class="b-slidedown__wrapper">
+                      <div class="b-slidedown__item">
+                        <div class="b-checkbox"><input class="b-checkbox__input" type="checkbox" name="apartment_fire" id="apartment_fire" value="Пожар"/>
+                          <label class="b-checkbox__name" for="apartment_fire"><span class="b-checkbox__text">Пожар</span><span class="b-tooltip b-tooltip--question"><span class="b-tooltip__icon">?</span><span class="b-tooltip__text">Подсказка</span></span>
+                          </label>
+                        </div>
+                      </div>
+                      <div class="b-slidedown__item">
+                        <div class="b-checkbox"><input class="b-checkbox__input" type="checkbox" name="apartment_natural-disaster" id="apartment_natural-disaster" value="Стихийное бедствие"/>
+                          <label class="b-checkbox__name" for="apartment_natural-disaster"><span class="b-checkbox__text">Стихийное бедствие</span><span class="b-tooltip b-tooltip--question"><span class="b-tooltip__icon">?</span><span class="b-tooltip__text">Подсказка</span></span>
+                          </label>
+                        </div>
+                      </div>
+                      <div class="b-slidedown__item">
+                        <div class="b-checkbox"><input class="b-checkbox__input" type="checkbox" name="apartment_effect-fluid" id="apartment_effect-fluid" value="Воздействие жидкости"/>
+                          <label class="b-checkbox__name" for="apartment_effect-fluid"><span class="b-checkbox__text">Воздействие жидкости</span><span class="b-tooltip b-tooltip--question"><span class="b-tooltip__icon">?</span><span class="b-tooltip__text">Подсказка</span></span>
+                          </label>
+                        </div>
+                      </div>
+                      <div class="b-slidedown__item">
+                        <div class="b-checkbox"><input class="b-checkbox__input" type="checkbox" name="apartment_explosion" id="apartment_explosion" value="Взрыв"/>
+                          <label class="b-checkbox__name" for="apartment_explosion"><span class="b-checkbox__text">Взрыв</span><span class="b-tooltip b-tooltip--question"><span class="b-tooltip__icon">?</span><span class="b-tooltip__text">Подсказка</span></span>
+                          </label>
+                        </div>
+                      </div>
+                      <div class="b-slidedown__item">
+                        <div class="b-checkbox"><input class="b-checkbox__input" type="checkbox" name="apartment_mechanical-damage" id="apartment_mechanical-damage" value="Механические повреждения"/>
+                          <label class="b-checkbox__name" for="apartment_mechanical-damage"><span class="b-checkbox__text">Механические повреждения</span><span class="b-tooltip b-tooltip--question"><span class="b-tooltip__icon">?</span><span class="b-tooltip__text">Подсказка</span></span>
+                          </label>
+                        </div>
+                      </div>
+                      <div class="b-slidedown__item">
+                        <div class="b-checkbox"><input class="b-checkbox__input" type="checkbox" name="apartment_illegal-action" id="apartment_illegal-action" value="Противоправные действия"/>
+                          <label class="b-checkbox__name" for="apartment_illegal-action"><span class="b-checkbox__text">Противоправные действия</span><span class="b-tooltip b-tooltip--question"><span class="b-tooltip__icon">?</span><span class="b-tooltip__text">Подсказка</span></span>
+                          </label>
+                        </div>
+                      </div>
+                      <div class="b-slidedown__item">
+                        <div class="b-checkbox"><input class="b-checkbox__input" type="checkbox" name="apartment_lightning-strike" id="apartment_lightning-strike" value="Удар молнии"/>
+                          <label class="b-checkbox__name" for="apartment_lightning-strike"><span class="b-checkbox__text">Удар молнии</span><span class="b-tooltip b-tooltip--question"><span class="b-tooltip__icon">?</span><span class="b-tooltip__text">Подсказка</span></span>
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="b-calculator-page__group">
+                <div class="b-slidedown js-slidedown">
+                  <div class="b-slidedown__head">
+                    <div class="b-slidedown__title">Особые условия
+                    </div>
+                    <div class="b-slidedown__icon">
+                    </div>
+                  </div>
+                  <div class="b-slidedown__content">
+                    <div class="b-slidedown__wrapper">
+                      <div class="b-slidedown__item">
+                        <div class="b-checkbox"><input class="b-checkbox__input" type="checkbox" name="apartment_fire-alarm" id="apartment_fire-alarm" value="В квартире установлена пожарная сигнализация"/>
+                          <label class="b-checkbox__name" for="apartment_fire-alarm"><span class="b-checkbox__text">В квартире установлена пожарная сигнализация</span><span class="b-tooltip b-tooltip--question"><span class="b-tooltip__icon">?</span><span class="b-tooltip__text">Подсказка</span></span>
+                          </label>
+                        </div>
+                      </div>
+                      <div class="b-slidedown__item">
+                        <div class="b-checkbox"><input class="b-checkbox__input" type="checkbox" name="apartment_burglar-alarm" id="apartment_burglar-alarm" value="В квартире установлена охранная сигнализация"/>
+                          <label class="b-checkbox__name" for="apartment_burglar-alarm"><span class="b-checkbox__text">В квартире установлена охранная сигнализация</span><span class="b-tooltip b-tooltip--question"><span class="b-tooltip__icon">?</span><span class="b-tooltip__text">Подсказка</span></span>
+                          </label>
+                        </div>
+                      </div>
+                      <div class="b-slidedown__item">
+                        <div class="b-checkbox"><input class="b-checkbox__input" type="checkbox" name="apartment_control-system" id="apartment_control-system" value="В квартире установлена система контроля утечек и автоматического перекрытия водоснабжения"/>
+                          <label class="b-checkbox__name" for="apartment_control-system"><span class="b-checkbox__text">В квартире установлена система контроля утечек и автоматического перекрытия водоснабжения</span><span class="b-tooltip b-tooltip--question"><span class="b-tooltip__icon">?</span><span class="b-tooltip__text">Подсказка</span></span>
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="b-calculator-page__group">
+                <div class="b-calculator-page__group-name">Промокод
+                </div>
+                <div class="b-input b-input--calc"><input class="b-input__input-field b-input__input-field--calc" id="apartment_promocode" type="text" placeholder="" name="apartment_promocode"/>
+                </div>
+              </div>
+              <div class="b-calculator-page__button">
+                <button class="b-button b-button--font-small">Рассчитать
+                </button>
+              </div>
+            </form>
+          </section>
+          <section class="b-calculator-page__content" id="tab-4">
+            <h1 class="b-calculator-page__title">Рассчитать страховку от несчастного случая
+            </h1>
+            <form class="b-calculator-page__form b-calculator-page__form--range">
+              <div class="b-calculator-page__group">
+                <div class="b-range-group">
+                  <div class="b-range-group__check">
+                    <div class="b-checkbox b-checkbox--range js-toggle-range"><input class="b-checkbox__input" type="checkbox" name="accident_structural-element" id="accident_structural-element" value="Конструктивные элементы"/>
+                      <label class="b-checkbox__name b-checkbox__name--range js-toggle-range" for="accident_structural-element"><span class="b-checkbox__text">Конструктивные элементы</span><span class="b-tooltip b-tooltip--question"><span class="b-tooltip__icon">?</span><span class="b-tooltip__text">Подсказка</span></span>
+                      </label>
+                    </div>
+                  </div>
+                  <div class="b-range-group__range-wrapper"><input class="b-range-group__range js-range-slider" data-min="100000" data-max="5000000" type="text"/>
+                  </div>
+                  <div class="b-range-group__input">
+                    <div class="b-input b-input--calc"><input class="b-input__input-field js-range-input js-range-input--calc" id="accident_structural-element-input" type="text" placeholder="" name="accident_structural-element-input" disabled="disabled"/>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="b-calculator-page__group">
+                <div class="b-range-group">
+                  <div class="b-range-group__check">
+                    <div class="b-checkbox b-checkbox--range js-toggle-range"><input class="b-checkbox__input" type="checkbox" name="accident_interior-decoration" id="accident_interior-decoration" value="Внутренняя отделка"/>
+                      <label class="b-checkbox__name b-checkbox__name--range js-toggle-range" for="accident_interior-decoration"><span class="b-checkbox__text">Внутренняя отделка</span><span class="b-tooltip b-tooltip--question"><span class="b-tooltip__icon">?</span><span class="b-tooltip__text">Подсказка</span></span>
+                      </label>
+                    </div>
+                  </div>
+                  <div class="b-range-group__range-wrapper"><input class="b-range-group__range js-range-slider" data-min="200000" data-max="5000000" type="text"/>
+                  </div>
+                  <div class="b-range-group__input">
+                    <div class="b-input b-input--calc"><input class="b-input__input-field js-range-input js-range-input--calc" id="accident_interior-decoration-input" type="text" placeholder="" name="accident_interior-decoration-input" disabled="disabled"/>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="b-calculator-page__group">
+                <div class="b-range-group">
+                  <div class="b-range-group__check">
+                    <div class="b-checkbox b-checkbox--range js-toggle-range"><input class="b-checkbox__input" type="checkbox" name="accident_movable-property" id="accident_movable-property" value="Движимое имущество"/>
+                      <label class="b-checkbox__name b-checkbox__name--range js-toggle-range" for="accident_movable-property"><span class="b-checkbox__text">Движимое имущество</span><span class="b-tooltip b-tooltip--question"><span class="b-tooltip__icon">?</span><span class="b-tooltip__text">Подсказка</span></span>
+                      </label>
+                    </div>
+                  </div>
+                  <div class="b-range-group__range-wrapper"><input class="b-range-group__range js-range-slider" data-min="200000" data-max="1000000" type="text"/>
+                  </div>
+                  <div class="b-range-group__input">
+                    <div class="b-input b-input--calc"><input class="b-input__input-field js-range-input js-range-input--calc" id="accident_movable-property-input" type="text" placeholder="" name="accident_movable-property-input" disabled="disabled"/>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="b-calculator-page__group">
+                <div class="b-range-group">
+                  <div class="b-range-group__check">
+                    <div class="b-checkbox b-checkbox--range js-toggle-range"><input class="b-checkbox__input" type="checkbox" name="accident_civil-liability" id="accident_civil-liability" value="Гражданская ответственность"/>
+                      <label class="b-checkbox__name b-checkbox__name--range js-toggle-range" for="accident_civil-liability"><span class="b-checkbox__text">Гражданская ответственность</span><span class="b-tooltip b-tooltip--question"><span class="b-tooltip__icon">?</span><span class="b-tooltip__text">Подсказка</span></span>
+                      </label>
+                    </div>
+                  </div>
+                  <div class="b-range-group__range-wrapper"><input class="b-range-group__range js-range-slider" data-min="100000" data-max="500000" type="text"/>
+                  </div>
+                  <div class="b-range-group__input">
+                    <div class="b-input b-input--calc"><input class="b-input__input-field js-range-input js-range-input--calc" id="accident_civil-liability-input" type="text" placeholder="" name="accident_civil-liability-input" disabled="disabled"/>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="b-calculator-page__group">
+                <div class="b-checkbox js-rent-check"><input class="b-checkbox__input" type="checkbox" name="accident_rent" id="accident_rent" value="Квартира сдается в аренду"/>
+                  <label class="b-checkbox__name js-rent-check" for="accident_rent"><span class="b-checkbox__text">Квартира сдается в аренду</span><span class="b-tooltip b-tooltip--question"><span class="b-tooltip__icon">?</span><span class="b-tooltip__text">Подсказка</span></span>
+                  </label>
+                </div>
+              </div>
+              <div class="b-calculator-page__group">
+                <div class="b-slidedown b-slidedown--column js-slidedown js-rent-condition">
+                  <div class="b-slidedown__head">
+                    <div class="b-slidedown__title">От каких рисков застраховано
+                    </div>
+                    <div class="b-slidedown__icon">
+                    </div>
+                  </div>
+                  <div class="b-slidedown__content">
+                    <div class="b-slidedown__wrapper">
+                      <div class="b-slidedown__item">
+                        <div class="b-checkbox"><input class="b-checkbox__input" type="checkbox" name="accident_fire" id="accident_fire" value="Пожар"/>
+                          <label class="b-checkbox__name" for="accident_fire"><span class="b-checkbox__text">Пожар</span><span class="b-tooltip b-tooltip--question"><span class="b-tooltip__icon">?</span><span class="b-tooltip__text">Подсказка</span></span>
+                          </label>
+                        </div>
+                      </div>
+                      <div class="b-slidedown__item">
+                        <div class="b-checkbox"><input class="b-checkbox__input" type="checkbox" name="accident_natural-disaster" id="accident_natural-disaster" value="Стихийное бедствие"/>
+                          <label class="b-checkbox__name" for="accident_natural-disaster"><span class="b-checkbox__text">Стихийное бедствие</span><span class="b-tooltip b-tooltip--question"><span class="b-tooltip__icon">?</span><span class="b-tooltip__text">Подсказка</span></span>
+                          </label>
+                        </div>
+                      </div>
+                      <div class="b-slidedown__item">
+                        <div class="b-checkbox"><input class="b-checkbox__input" type="checkbox" name="accident_effect-fluid" id="accident_effect-fluid" value="Воздействие жидкости"/>
+                          <label class="b-checkbox__name" for="accident_effect-fluid"><span class="b-checkbox__text">Воздействие жидкости</span><span class="b-tooltip b-tooltip--question"><span class="b-tooltip__icon">?</span><span class="b-tooltip__text">Подсказка</span></span>
+                          </label>
+                        </div>
+                      </div>
+                      <div class="b-slidedown__item">
+                        <div class="b-checkbox"><input class="b-checkbox__input" type="checkbox" name="accident_explosion" id="accident_explosion" value="Взрыв"/>
+                          <label class="b-checkbox__name" for="accident_explosion"><span class="b-checkbox__text">Взрыв</span><span class="b-tooltip b-tooltip--question"><span class="b-tooltip__icon">?</span><span class="b-tooltip__text">Подсказка</span></span>
+                          </label>
+                        </div>
+                      </div>
+                      <div class="b-slidedown__item">
+                        <div class="b-checkbox"><input class="b-checkbox__input" type="checkbox" name="accident_mechanical-damage" id="accident_mechanical-damage" value="Механические повреждения"/>
+                          <label class="b-checkbox__name" for="accident_mechanical-damage"><span class="b-checkbox__text">Механические повреждения</span><span class="b-tooltip b-tooltip--question"><span class="b-tooltip__icon">?</span><span class="b-tooltip__text">Подсказка</span></span>
+                          </label>
+                        </div>
+                      </div>
+                      <div class="b-slidedown__item">
+                        <div class="b-checkbox"><input class="b-checkbox__input" type="checkbox" name="accident_illegal-action" id="accident_illegal-action" value="Противоправные действия"/>
+                          <label class="b-checkbox__name" for="accident_illegal-action"><span class="b-checkbox__text">Противоправные действия</span><span class="b-tooltip b-tooltip--question"><span class="b-tooltip__icon">?</span><span class="b-tooltip__text">Подсказка</span></span>
+                          </label>
+                        </div>
+                      </div>
+                      <div class="b-slidedown__item">
+                        <div class="b-checkbox"><input class="b-checkbox__input" type="checkbox" name="accident_lightning-strike" id="accident_lightning-strike" value="Удар молнии"/>
+                          <label class="b-checkbox__name" for="accident_lightning-strike"><span class="b-checkbox__text">Удар молнии</span><span class="b-tooltip b-tooltip--question"><span class="b-tooltip__icon">?</span><span class="b-tooltip__text">Подсказка</span></span>
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="b-calculator-page__group">
+                <div class="b-slidedown js-slidedown">
+                  <div class="b-slidedown__head">
+                    <div class="b-slidedown__title">Особые условия
+                    </div>
+                    <div class="b-slidedown__icon">
+                    </div>
+                  </div>
+                  <div class="b-slidedown__content">
+                    <div class="b-slidedown__wrapper">
+                      <div class="b-slidedown__item">
+                        <div class="b-checkbox"><input class="b-checkbox__input" type="checkbox" name="accident_fire-alarm" id="accident_fire-alarm" value="В квартире установлена пожарная сигнализация"/>
+                          <label class="b-checkbox__name" for="accident_fire-alarm"><span class="b-checkbox__text">В квартире установлена пожарная сигнализация</span><span class="b-tooltip b-tooltip--question"><span class="b-tooltip__icon">?</span><span class="b-tooltip__text">Подсказка</span></span>
+                          </label>
+                        </div>
+                      </div>
+                      <div class="b-slidedown__item">
+                        <div class="b-checkbox"><input class="b-checkbox__input" type="checkbox" name="accident_burglar-alarm" id="accident_burglar-alarm" value="В квартире установлена охранная сигнализация"/>
+                          <label class="b-checkbox__name" for="accident_burglar-alarm"><span class="b-checkbox__text">В квартире установлена охранная сигнализация</span><span class="b-tooltip b-tooltip--question"><span class="b-tooltip__icon">?</span><span class="b-tooltip__text">Подсказка</span></span>
+                          </label>
+                        </div>
+                      </div>
+                      <div class="b-slidedown__item">
+                        <div class="b-checkbox"><input class="b-checkbox__input" type="checkbox" name="accident_control-system" id="accident_control-system" value="В квартире установлена система контроля утечек и автоматического перекрытия водоснабжения"/>
+                          <label class="b-checkbox__name" for="accident_control-system"><span class="b-checkbox__text">В квартире установлена система контроля утечек и автоматического перекрытия водоснабжения</span><span class="b-tooltip b-tooltip--question"><span class="b-tooltip__icon">?</span><span class="b-tooltip__text">Подсказка</span></span>
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="b-calculator-page__group">
+                <div class="b-calculator-page__group-name">Промокод
+                </div>
+                <div class="b-input b-input--calc"><input class="b-input__input-field b-input__input-field--calc" id="accident_promocode" type="text" placeholder="" name="accident_promocode"/>
+                </div>
+              </div>
+              <div class="b-calculator-page__button">
+                <button class="b-button b-button--font-small">Рассчитать
+                </button>
+              </div>
+            </form>
+          </section>
+        </section>
+      </main>
+      <footer class="b-footer">
+        <div class="b-container">
+          <div class="b-footer__content">
+            <div class="b-footer__logo"><a class="b-logo" href="/" title="Абсолют страхование"><img src="./images/inhtml/logo.png" alt="Логотип абсолют страхование"></a>
+            </div>
+            <div class="b-footer__tel"><a class="b-telephone b-telephone--footer" href="tel:+74959871838" title="Позвонить">+7 (495) 987-18-38</a>
+            </div>
+            <address class="b-footer__contact-info">
+              <div class="b-nav-footer b-nav-footer--address">
+                <ul class="b-nav-footer__list">
+                  <li class="b-nav-footer__item"><span class="b-nav-footer__name b-nav-footer__name--without-underline">г. Москва, ул. Ленинская Слобода, д. 26</span>
+                  </li>
+                  <li class="b-nav-footer__item"><a class="b-nav-footer__name" href="mailto:info@absolutins.ru" title="info@absolutins.ru">info@absolutins.ru</a>
+                  </li>
+                  <li class="b-nav-footer__item"><a class="b-nav-footer__name" href="https://www.absolutins.ru/" title="www.absolutins.ru">www.absolutins.ru</a>
+                  </li>
+                </ul>
+              </div>
+            </address>
+            <div class="b-footer__nav">
+              <nav class="b-nav-footer">
+                <ul class="b-nav-footer__list">
+                  <li class="b-nav-footer__item"><a class="b-nav-footer__name" href="#feedback" title="Обратная связь">Обратная связь</a>
+                  </li>
+                  <li class="b-nav-footer__item"><a class="b-nav-footer__name" href="#" title="Правила">Правила</a>
+                  </li>
+                  <li class="b-nav-footer__item"><a class="b-nav-footer__name" href="https://www.absolutins.ru/upload/docs/persdata_sogl.pdf" title="Пользовательское соглашение">Пользовательское соглашение</a>
+                  </li>
+                  <li class="b-nav-footer__item"><a class="b-nav-footer__name" href="https://www.absolutins.ru/upload/docs/persdata_bez.pdf" title="Политика конфиденциальности">Политика конфиденциальности</a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+            <div class="b-footer__social">
+              <div class="b-social">
+                <div class="b-social__title">Поделиться в соцсетях
+                </div>
+                <ul class="b-social__list">
+                  <li class="b-social__item"><a class="b-social__link" href="https://instagram.com/absolutins.ru/" title="Инстаграм"><span class="b-social__icon"><svg width="40" height="41" viewBox="0 0 40 41" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M20.0481 23.9327C21.9817 23.9327 23.5493 22.3794 23.5493 20.4633C23.5493 18.5472 21.9817 16.9939 20.0481 16.9939C18.1144 16.9939 16.5469 18.5472 16.5469 20.4633C16.5469 22.3794 18.1144 23.9327 20.0481 23.9327Z" />
+<path d="M20.048 0.64502C8.96884 0.64502 0 9.53234 0 20.4633C0 31.3942 8.96884 40.2815 20 40.2815C31.0312 40.2815 40.0001 31.3942 40.0001 20.4633C40.048 9.53234 31.0792 0.64502 20.048 0.64502ZM30.5036 24.7881C30.4557 25.8812 30.2638 26.6416 30.024 27.307C29.7363 27.9723 29.4005 28.5902 28.825 29.1605C28.2494 29.7308 27.6739 30.111 26.9545 30.3486C26.283 30.5862 25.5156 30.7763 24.4125 30.8239C23.3094 30.8714 22.9257 30.8714 20.048 30.8714C17.1703 30.8714 16.8346 30.8714 15.6835 30.8239C14.5804 30.7763 13.813 30.5862 13.1415 30.3486C12.47 30.0635 11.8465 29.7308 11.271 29.1605C10.6955 28.5902 10.3118 28.0199 10.072 27.307C9.83215 26.6416 9.6403 25.8812 9.59234 24.7881C9.54438 23.695 9.54438 23.3148 9.54438 20.4633C9.54438 17.6117 9.54438 17.279 9.59234 16.1384C9.6403 15.0453 9.83215 14.2849 10.072 13.6196C10.3597 12.9542 10.6955 12.3364 11.271 11.766C11.8465 11.1957 12.4221 10.8155 13.1415 10.5779C13.813 10.3403 14.5804 10.1502 15.6835 10.1026C16.7866 10.0551 17.1703 10.0551 20.048 10.0551C22.9257 10.0551 23.2614 10.0551 24.4125 10.1026C25.5156 10.1502 26.283 10.3403 26.9545 10.5779C27.6259 10.8631 28.2494 11.1957 28.825 11.766C29.4005 12.3364 29.7842 12.9067 30.024 13.6196C30.2638 14.2849 30.4557 15.0453 30.5036 16.1384C30.5516 17.2315 30.5516 17.6117 30.5516 20.4633C30.5516 23.3148 30.5516 23.6475 30.5036 24.7881Z" />
+<path d="M28.2493 14.3326C28.0575 13.8573 27.8177 13.4771 27.482 13.1444C27.0983 12.7642 26.7625 12.5741 26.2829 12.384C25.8992 12.2415 25.3716 12.0514 24.3165 12.0038C23.2134 11.9563 22.8776 11.9563 20.0479 11.9563C17.2182 11.9563 16.8824 11.9563 15.7793 12.0038C14.7721 12.0514 14.1966 12.2415 13.8129 12.384C13.3333 12.5741 12.9496 12.8118 12.6138 13.1444C12.2301 13.5246 12.0383 13.8573 11.8464 14.3326C11.7026 14.7128 11.5107 15.2356 11.4628 16.2811C11.4148 17.3742 11.4148 17.7069 11.4148 20.5109C11.4148 23.315 11.4148 23.6476 11.4628 24.7407C11.5107 25.7388 11.7026 26.3091 11.8464 26.6893C12.0383 27.1645 12.2781 27.5447 12.6138 27.8774C12.9975 28.2576 13.3333 28.4477 13.8129 28.6378C14.1966 28.7804 14.7241 28.9705 15.7793 29.018C16.8824 29.0656 17.2182 29.0656 20.0479 29.0656C22.8776 29.0656 23.2134 29.0656 24.3165 29.018C25.3237 28.9705 25.8992 28.7804 26.2829 28.6378C26.7625 28.4477 27.1462 28.2101 27.482 27.8774C27.8657 27.4972 28.0575 27.1645 28.2493 26.6893C28.3932 26.3091 28.5851 25.7863 28.633 24.7407C28.681 23.6476 28.681 23.315 28.681 20.5109C28.681 17.7069 28.681 17.3742 28.633 16.2811C28.5851 15.2356 28.3932 14.6653 28.2493 14.3326ZM20.0479 25.8338C17.0743 25.8338 14.6282 23.41 14.6282 20.4634C14.6282 17.5168 17.0743 15.093 20.0479 15.093C23.0215 15.093 25.4676 17.5168 25.4676 20.4634C25.4676 23.41 23.0215 25.8338 20.0479 25.8338ZM25.6594 16.1386C24.94 16.1386 24.4124 15.5683 24.4124 14.9029C24.4124 14.2375 24.988 13.6672 25.6594 13.6672C26.3309 13.6672 26.9064 14.2375 26.9064 14.9029C26.9064 15.5683 26.3788 16.1386 25.6594 16.1386Z" />
+</svg></span></a>
+                  </li>
+                  <li class="b-social__item"><a class="b-social__link" href="https://vk.com/absolutins" title="Вконтакте"><span class="b-social__icon"><svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M19.9999 0C8.96878 0 0 8.92086 0 20C0 31.0312 8.96878 40 19.9999 40C31.031 40 39.9998 31.0312 39.9998 20C40.0478 8.92086 31.079 0 19.9999 0ZM31.079 27.1942L27.6737 27.2422C27.6737 27.2422 26.9543 27.3861 25.9951 26.7146C24.7481 25.8513 23.549 23.5971 22.5898 23.8849C21.6306 24.1727 21.6786 26.235 21.6786 26.235C21.6786 26.235 21.6786 26.6667 21.4867 26.9065C21.2469 27.1463 20.8152 27.1942 20.8152 27.1942H19.2805C19.2805 27.1942 15.9232 27.3861 12.9975 24.3165C9.78413 20.9592 6.9544 14.3405 6.9544 14.3405C6.9544 14.3405 6.81052 13.9089 6.9544 13.717C7.14625 13.4772 7.72179 13.4772 7.72179 13.4772H11.3669C11.3669 13.4772 11.7026 13.5252 11.9424 13.717C12.1342 13.8609 12.2781 14.1487 12.2781 14.1487C12.2781 14.1487 12.8537 15.6355 13.621 16.9784C15.1558 19.6163 15.8273 20.1918 16.3548 19.9041C17.1222 19.4724 16.8824 16.211 16.8824 16.211C16.8824 16.211 16.8824 15.012 16.4987 14.4844C16.211 14.0528 15.6354 13.9568 15.3956 13.9089C15.2038 13.8609 15.5395 13.4293 15.9711 13.1894C16.6426 12.8537 17.7937 12.8537 19.1366 12.8537C20.1918 12.8537 20.5275 12.9496 20.9112 13.0456C22.1582 13.3333 21.7265 14.5324 21.7265 17.3141C21.7265 18.2254 21.5826 19.4724 22.2061 19.9041C22.4939 20.0959 23.1654 19.952 24.844 17.0264C25.6593 15.6355 26.2349 14.0528 26.2349 14.0528C26.2349 14.0528 26.3788 13.765 26.5706 13.6211C26.7625 13.4772 27.0502 13.5252 27.0502 13.5252H30.8871C30.8871 13.5252 32.0382 13.3813 32.2301 13.9089C32.4219 14.4365 31.7984 15.7314 30.2636 17.7938C27.7217 21.199 27.4339 20.9113 29.5442 22.8777C31.5586 24.7482 31.9903 25.6595 32.0862 25.8034C32.8536 27.0504 31.079 27.1942 31.079 27.1942Z" />
+</svg></span></a>
+                  </li>
+                  <li class="b-social__item"><a class="b-social__link" href="https://www.facebook.com/absolutinsurance" title="Фейсбук"><span class="b-social__icon"><svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M20 0C8.92086 0 0 8.92086 0 20C0 31.0312 8.96883 40 20 40C31.0312 40 40 31.0312 40 20C40 8.92086 31.0312 0 20 0ZM26.3309 11.8945H24.0288C22.2542 11.8945 21.8705 12.7578 21.8705 14.0048V16.7866H26.1391L25.5636 21.1031H21.8225V32.1823H17.3621V21.0552H13.6211V16.7386H17.3621V13.5731C17.3621 9.8801 19.6163 7.86571 22.9257 7.86571C24.5084 7.86571 25.8513 7.96163 26.283 8.05755V11.8945H26.3309Z" />
+</svg></span></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <p class="b-footer__quote">
+               Абсолют Страхование. <br>Защита Ваших успехов
+            </p>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script src="js/external.js?1592216238965"></script>
+    <script src="js/internal.js?1592216238966"></script>
+  </body>
+</html>

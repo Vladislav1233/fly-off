@@ -1,0 +1,17 @@
+/* 768++  */
+.b-range-group {
+
+    &__range-wrapper {
+        width: 360px;
+        display: inline-block;
+        margin-bottom: 10px;
+        vertical-align: middle;
+    }
+
+    &__input {
+        width: 145px;
+        display: inline-block;
+        vertical-align: middle;
+        margin-left: 65px;
+    }
+}

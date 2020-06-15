@@ -1,0 +1,369 @@
+//- Используем стандартный шаблон Project
+extends ./template/base_layout
+
+include ./section/ui-kit/radio
+include ./section/ui-kit/input
+include ./section/ui-kit/checkbox
+include ./section/ui-kit/button
+include ./section/tab
+include ./section/slidedown
+
+block variables
+    - var file_name = 'calculator'
+
+//- Модифицируем head
+block head
+    - var pageTitle = 'Калькулятор';
+
+//- Выводим попапы
+block popup
+
+//- Выводим content
+block content
+    +b('section').calculator-page
+        +e('a')(href="#", title="Назад").back 
+            <svg width="73" height="28" viewBox="0 0 73 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1.5 14H72.5M1.5 14L14.5 1M1.5 14L14.5 27" stroke="#41B6E6"/>
+            </svg>
+            | Назад
+        +tab()
+
+        +e('section').content#tab-1
+            +e('h1').title Рассчитать страховку для выезда за границу
+
+            +e('form').form
+                +e.group
+                    +e.group-name Тип полиса
+                
+                    +radio([{
+                        id: 'travel_for-trip',
+                        name: 'travel_type-police',
+                        text: 'На одну поездку'
+                    }, {
+                        id: 'travel_annual-policy',
+                        name: 'travel_type-police',
+                        text: 'Годовой полис'
+                    }]) 
+                
+                +e.group-inline
+                    +e.group.--inline
+                        +e.group-name Период поездки, с
+                        //- input(id, type, placeholder, name, value, autocomplete, error, label)
+                        +input('travel_start-period', 'tel', 'дд.мм.гг', 'travel_start-period').--calc
+
+                    +e.group.--inline
+                        +e.group-name Период поездки, по
+                        +input('travel_end-period', 'tel', 'дд.мм.гг', 'travel_end-period').--calc
+
+                +e.group
+                    +e.group-name Страна поездки
+                    +input('travel_country', 'text', '', 'travel_country').--calc
+
+                    +e.checkbox-group
+                        +e.checkbox-item
+                            //- checkbox(name, id, title, js)
+                            include section/ui-kit/checkbox.pug
+                            +checkbox('travel_schengen-countries', 'travel_schengen-countries', 'Страны Шенгенского Соглашения')
+                        +e.checkbox-item
+                            include section/ui-kit/checkbox.pug
+                            +checkbox('travel_active-recreation', 'travel_active-recreation', 'Активный отдых', '', true)
+                        +e.checkbox-item
+                            include section/ui-kit/checkbox.pug
+                            +checkbox('travel_already-traveling', 'travel_already-traveling', 'Уже путешествую')
+
+                +e.group.js-place-more
+                    +e.block-clone.js-block-more
+                        +e.group-name Возраст <span class="js-count-traveler">1</span>-го путешественника
+                    
+                        +radio([{
+                            id: 'travel_age-min',
+                            name: 'travel_count-traveler',
+                            text: 'от 1 до 3 лет'
+                        }, {
+                            id: 'travel_age-medium',
+                            name: 'travel_count-traveler',
+                            text: 'от 4 до 28 лет'
+                        }, {
+                            id: 'travel_age-large',
+                            name: 'travel_count-traveler',
+                            text: 'от 29 до 65 лет'
+                        }]).--large
+                
+                +e.group
+                    +e.button
+                        +button('a', '+ добавить путешественника').--font-small.js-button-more
+
+                +e.group
+                    +e.group-name Промокод если есть
+                    +input('travel_promocode', 'text', '', 'travel_promocode').--calc
+
+                +e.button
+                    +button('button', 'Рассчитать').--font-small
+
+        
+        +e('section').content#tab-2
+            +e('h1').title Рассчитать страховку для выезда за границу
+
+            +e('form').form
+                +e.group
+                    +e.group-name Тип полиса
+                
+                    +radio([{
+                        id: 'travel-upgrade_for-trip',
+                        name: 'travel-upgrade_type-police',
+                        text: 'На одну поездку'
+                    }, {
+                        id: 'travel-upgrade_annual-policy',
+                        name: 'travel-upgrade_type-police',
+                        text: 'Годовой полис'
+                    }]) 
+                
+                +e.group-inline
+                    +e.group.--inline
+                        +e.group-name Период поездки, с
+                        //- input(id, type, placeholder, name, value, autocomplete, error, label)
+                        +input('travel-upgrade_start-period', 'tel', 'дд.мм.гг', 'travel-upgrade_start-period').--calc
+
+                    +e.group.--inline
+                        +e.group-name Период поездки, по
+                        +input('travel-upgrade_end-period', 'tel', 'дд.мм.гг', 'travel-upgrade_end-period').--calc
+
+                +e.group
+                    +e.group-name Страна поездки
+                    +input('travel-upgrade_country', 'text', '', 'travel-upgrade_country').--calc
+
+                    +e.checkbox-group
+                        +e.checkbox-item
+                            //- checkbox(name, id, title, js)
+                            include section/ui-kit/checkbox.pug
+                            +checkbox('travel-upgrade_schengen-countries', 'travel-upgrade_schengen-countries', 'Страны Шенгенского Соглашения')
+                        +e.checkbox-item
+                            include section/ui-kit/checkbox.pug
+                            +checkbox('travel-upgrade_active-recreation', 'travel-upgrade_active-recreation', 'Активный отдых', '', true)
+                        +e.checkbox-item
+                            include section/ui-kit/checkbox.pug
+                            +checkbox('travel-upgrade_already-traveling', 'travel-upgrade_already-traveling', 'Уже путешествую')
+
+                +e.group.js-place-more
+                    +e.block-clone.js-block-more
+                        +e.group-name Возраст <span class="js-count-traveler">1</span>-го путешественника
+                    
+                        +radio([{
+                            id: 'travel-upgrade_age-min',
+                            name: 'travel-upgrade_count-traveler',
+                            text: 'от 1 до 3 лет'
+                        }, {
+                            id: 'travel-upgrade_age-medium',
+                            name: 'travel-upgrade_count-traveler',
+                            text: 'от 4 до 28 лет'
+                        }, {
+                            id: 'travel-upgrade_age-large',
+                            name: 'travel-upgrade_count-traveler',
+                            text: 'от 29 до 65 лет'
+                        }]).--large
+                
+                +e.group
+                    +e.button
+                        +button('a', '+ добавить путешественника').--font-small.js-button-more
+
+                +e.group
+                    +e.group-name Промокод если есть
+                    +input('travel-upgrade_promocode', 'text', '', 'travel-upgrade_promocode').--calc
+
+                +e.button
+                    +button('button', 'Рассчитать').--font-small
+
+
+        
+        +e('section').content#tab-3
+            +e('h1').title Рассчитать страховку для квартиры
+
+            +e('form').form.--range
+                +e.group
+                    +b.range-group
+                        +e.check
+                            include section/ui-kit/checkbox.pug
+                            +checkbox('apartment_structural-element', 'apartment_structural-element', 'Конструктивные элементы', '', true).--range.js-toggle-range
+                        
+                        +e.range-wrapper
+                            +e('input')(
+                                data-min="100000",
+                                data-max="5000000"
+                            ).range.js-range-slider
+                        
+                        +e.input
+                            +input('apartment_structural-element-input', 'text', '', 'apartment_structural-element-input', 'js-range-input').--calc(disabled)
+                
+                +e.group
+                    +b.range-group
+                        +e.check
+                            include section/ui-kit/checkbox.pug
+                            +checkbox('apartment_interior-decoration', 'apartment_interior-decoration', 'Внутренняя отделка', '', true).--range.js-toggle-range
+                        
+                        +e.range-wrapper
+                            +e('input')(
+                                data-min="200000",
+                                data-max="5000000"
+                            ).range.js-range-slider
+                        
+                        +e.input
+                            +input('apartment_interior-decoration-input', 'text', '', 'apartment_interior-decoration-input', 'js-range-input').--calc(disabled)
+
+                +e.group
+                    +b.range-group
+                        +e.check
+                            include section/ui-kit/checkbox.pug
+                            +checkbox('apartment_movable-property', 'apartment_movable-property', 'Движимое имущество', '', true).--range.js-toggle-range
+                        
+                        +e.range-wrapper
+                            +e('input')(
+                                data-min="200000",
+                                data-max="1000000"
+                            ).range.js-range-slider
+                        
+                        +e.input
+                            +input('apartment_movable-property-input', 'text', '', 'apartment_movable-property-input', 'js-range-input').--calc(disabled)
+
+                +e.group
+                    +b.range-group
+                        +e.check
+                            include section/ui-kit/checkbox.pug
+                            +checkbox('apartment_civil-liability', 'apartment_civil-liability', 'Гражданская ответственность', '', true).--range.js-toggle-range
+                        
+                        +e.range-wrapper
+                            +e('input')(
+                                data-min="100000",
+                                data-max="500000"
+                            ).range.js-range-slider
+                        
+                        +e.input
+                            +input('apartment_civil-liability-input', 'text', '', 'apartment_civil-liability-input', 'js-range-input').--calc(disabled)
+                +e.group
+                    include section/ui-kit/checkbox.pug
+                    +checkbox('apartment_rent', 'apartment_rent', 'Квартира сдается в аренду', '', true).js-rent-check
+                +e.group
+                    +slidedown('От каких рисков застраховано').--column.js-slidedown.js-rent-condition
+                        +slideDownCheck('apartment_fire', 'Пожар')
+                        +slideDownCheck('apartment_natural-disaster', 'Стихийное бедствие')
+                        +slideDownCheck('apartment_effect-fluid', 'Воздействие жидкости')
+                        +slideDownCheck('apartment_explosion', 'Взрыв')
+                        +slideDownCheck('apartment_mechanical-damage', 'Механические повреждения')
+                        +slideDownCheck('apartment_illegal-action', 'Противоправные действия')
+                        +slideDownCheck('apartment_lightning-strike', 'Удар молнии')
+                        
+                        
+                        
+
+                +e.group
+                    +slidedown('Особые условия').js-slidedown
+                        +slideDownCheck('apartment_fire-alarm', 'В квартире установлена пожарная сигнализация')
+                        +slideDownCheck('apartment_burglar-alarm', 'В квартире установлена охранная сигнализация')
+                        +slideDownCheck('apartment_control-system', 'В квартире установлена система контроля утечек и автоматического перекрытия водоснабжения')
+
+                +e.group
+                    +e.group-name Промокод
+                    +input('apartment_promocode', 'text', '', 'apartment_promocode').--calc
+
+                +e.button
+                    +button('button', 'Рассчитать').--font-small
+
+
+
+        +e('section').content#tab-4
+            +e('h1').title Рассчитать страховку от несчастного случая
+
+            +e('form').form.--range
+                +e.group
+                    +b.range-group
+                        +e.check
+                            include section/ui-kit/checkbox.pug
+                            +checkbox('accident_structural-element', 'accident_structural-element', 'Конструктивные элементы', '', true).--range.js-toggle-range
+                        
+                        +e.range-wrapper
+                            +e('input')(
+                                data-min="100000",
+                                data-max="5000000"
+                            ).range.js-range-slider
+                        
+                        +e.input
+                            +input('accident_structural-element-input', 'text', '', 'accident_structural-element-input', 'js-range-input').--calc(disabled)
+                
+                +e.group
+                    +b.range-group
+                        +e.check
+                            include section/ui-kit/checkbox.pug
+                            +checkbox('accident_interior-decoration', 'accident_interior-decoration', 'Внутренняя отделка', '', true).--range.js-toggle-range
+                        
+                        +e.range-wrapper
+                            +e('input')(
+                                data-min="200000",
+                                data-max="5000000"
+                            ).range.js-range-slider
+                        
+                        +e.input
+                            +input('accident_interior-decoration-input', 'text', '', 'accident_interior-decoration-input', 'js-range-input').--calc(disabled)
+
+                +e.group
+                    +b.range-group
+                        +e.check
+                            include section/ui-kit/checkbox.pug
+                            +checkbox('accident_movable-property', 'accident_movable-property', 'Движимое имущество', '', true).--range.js-toggle-range
+                        
+                        +e.range-wrapper
+                            +e('input')(
+                                data-min="200000",
+                                data-max="1000000"
+                            ).range.js-range-slider
+                        
+                        +e.input
+                            +input('accident_movable-property-input', 'text', '', 'accident_movable-property-input', 'js-range-input').--calc(disabled)
+
+                +e.group
+                    +b.range-group
+                        +e.check
+                            include section/ui-kit/checkbox.pug
+                            +checkbox('accident_civil-liability', 'accident_civil-liability', 'Гражданская ответственность', '', true).--range.js-toggle-range
+                        
+                        +e.range-wrapper
+                            +e('input')(
+                                data-min="100000",
+                                data-max="500000"
+                            ).range.js-range-slider
+                        
+                        +e.input
+                            +input('accident_civil-liability-input', 'text', '', 'accident_civil-liability-input', 'js-range-input').--calc(disabled)
+                +e.group
+                    include section/ui-kit/checkbox.pug
+                    +checkbox('accident_rent', 'accident_rent', 'Квартира сдается в аренду', '', true).js-rent-check
+                +e.group
+                    +slidedown('От каких рисков застраховано').--column.js-slidedown.js-rent-condition
+                        +slideDownCheck('accident_fire', 'Пожар')
+                        +slideDownCheck('accident_natural-disaster', 'Стихийное бедствие')
+                        +slideDownCheck('accident_effect-fluid', 'Воздействие жидкости')
+                        +slideDownCheck('accident_explosion', 'Взрыв')
+                        +slideDownCheck('accident_mechanical-damage', 'Механические повреждения')
+                        +slideDownCheck('accident_illegal-action', 'Противоправные действия')
+                        +slideDownCheck('accident_lightning-strike', 'Удар молнии')
+                        
+                        
+                        
+
+                +e.group
+                    +slidedown('Особые условия').js-slidedown
+                        +slideDownCheck('accident_fire-alarm', 'В квартире установлена пожарная сигнализация')
+                        +slideDownCheck('accident_burglar-alarm', 'В квартире установлена охранная сигнализация')
+                        +slideDownCheck('accident_control-system', 'В квартире установлена система контроля утечек и автоматического перекрытия водоснабжения')
+
+                +e.group
+                    +e.group-name Промокод
+                    +input('accident_promocode', 'text', '', 'accident_promocode').--calc
+
+                +e.button
+                    +button('button', 'Рассчитать').--font-small
+
+
+
+mixin slideDownCheck(id, title)
+    +e.item
+        include section/ui-kit/checkbox.pug
+        +checkbox(id, id, title, '', true)

@@ -1,0 +1,19 @@
+.b-header {
+    &__logo {
+        width: 338px;
+    }
+
+    &__hamburger,
+    &__tel {
+        display: inline-block;
+        vertical-align: top;
+    }
+
+    &__tel {
+        margin-right: 30px;
+    }
+
+    &__content {
+        padding-top: 40px;
+    }
+}

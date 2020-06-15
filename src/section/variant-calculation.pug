@@ -1,0 +1,33 @@
+include ./ui-kit/button
+include ./ui-kit/tooltip
+include ./ribbon
+
+mixin item-calculate(name, src, alt, icon, tooltip, ribbon)
+    +b.item-calculate
+        +e.head
+            +e.icon
+                if icon
+                    | !{icon}
+                else
+                    +e('img')(src="./images/inhtml/upgrade-card.svg").icon-image
+            +e('p').name !{name}
+                if tooltip
+                    +tooltip(tooltip)
+        
+        if ribbon
+            +ribbon(ribbon)
+        +e.image-wrapper
+            +e('img')(src=src, alt=alt).image
+
+        +e.button
+            +button('a', 'Рассчитать')
+
+mixin variant-calculation(data)
+    .b-container
+        +b('section').variant-calculation
+            +e('h2').title Можно рассчитать здесь 
+
+            +e('ul').list
+                each item in data
+                    +e.item
+                        +item-calculate(item.name, item.src, item.alt, item.icon, item.tooltip, item.ribbon)

@@ -1,0 +1,48 @@
+include ../../section/ui-kit/logo
+include ../../section/telephone
+include ../../section/social
+include ../../section/nav-footer
+
+mixin footer()
+    +b('footer').footer
+        .b-container
+            +e.content
+                +e.logo
+                    include ../../section/ui-kit/logo.pug
+                    +logo()
+
+                +e.tel
+                    +telephone().--footer
+
+                +e('address').contact-info
+                    +nav-footer([{
+                        name: 'г. Москва, ул. Ленинская Слобода, д. 26'
+                    }, {
+                        href: 'mailto:info@absolutins.ru',
+                        name: 'info@absolutins.ru'
+                    }, {
+                        href: 'https://www.absolutins.ru/',
+                        name: 'www.absolutins.ru'
+                    }], true).--address
+
+                +e.nav
+                    +nav-footer([{
+                        href: '#feedback',
+                        name: 'Обратная связь'
+                    }, {
+                        href: '#',
+                        name: 'Правила'
+                    }, {
+                        href: 'https://www.absolutins.ru/upload/docs/persdata_sogl.pdf',
+                        name: 'Пользовательское соглашение'
+                    }, {
+                        href: 'https://www.absolutins.ru/upload/docs/persdata_bez.pdf',
+                        name: 'Политика конфиденциальности'
+                    }])
+                +e.social
+                    +social()
+
+                +e('p').quote 
+                    | Абсолют Страхование. 
+                    br
+                    | Защита Ваших успехов

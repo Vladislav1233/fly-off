@@ -1,0 +1,23 @@
+mixin tab()
+    +b.tab.js-tabs
+        +e.select.js-tab-select Путешествие
+            +e.select-icon
+                <svg width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1 1L6 6L11 1" stroke="#9397A0" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+        +e('ul').nav
+            +e.item-nav 
+                +e('a')(href="#tab-1").link 
+                    | Путешествие
+
+            +e.item-nav 
+                +e('a')(href="#tab-2").link
+                    | Путешествие “Апгрейд”
+
+            +e.item-nav
+                +e('a')(href="#tab-3").link
+                    | Страхование квартиры
+
+            +e.item-nav
+                +e('a')(href="#tab-4").link
+                    | Несчастный случай

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimal-ui, user-scalable=no">
+    <meta name="skype_toolbar" content="skype_toolbar_parser_compatible">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="google" value="notranslate">
+    <meta name="format-detection" content="telephone=no">
+    <link href="css/index-style.css" rel="stylesheet">
+    <title>Страница страниц</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js/partials/backstop.js"></script><!--[if lte IE 9]>
+    <script src="js/html5shiv/html5shiv.min.js"></script><![endif]-->
+  </head>
+  <body>
+    <button class="js-full-task" data-test="test">test All</button>
+    <button class="js-full-task" data-test="openReport">openReport</button>
+    <button class="js-full-task" data-test="approve">approve</button>
+    <ul>
+      <li><a href=".DS_Store" id=".DS_Store">.DS_Store</a>
+        <button class="dev js-show-list" style="display:none" data-id=".DS_Store" title="Список тестов">list</button>
+        <button class="dev" style="display:none" title="запустить тесты для страницы backstop test">test page(dev)</button>
+        <div style="display:none" id=".DS_Store-list">TODO список тестов для данной страницы
+          <div><span> название теста</span>
+            <button title="backstop test">запустить тест(dev)</button>
+          </div>
+          <button title="">Добавить тест</button>
+        </div>
+      </li>
+      <li><a href="calculator.html" id="calculator">calculator</a>
+        <button class="dev js-show-list" style="display:none" data-id="calculator" title="Список тестов">list</button>
+        <button class="dev" style="display:none" title="запустить тесты для страницы backstop test">test page(dev)</button>
+        <div style="display:none" id="calculator-list">TODO список тестов для данной страницы
+          <div><span> название теста</span>
+            <button title="backstop test">запустить тест(dev)</button>
+          </div>
+          <button title="">Добавить тест</button>
+        </div>
+      </li>
+      <li><a href="iconlist.html" id="iconlist">iconlist</a>
+        <button class="dev js-show-list" style="display:none" data-id="iconlist" title="Список тестов">list</button>
+        <button class="dev" style="display:none" title="запустить тесты для страницы backstop test">test page(dev)</button>
+        <div style="display:none" id="iconlist-list">TODO список тестов для данной страницы
+          <div><span> название теста</span>
+            <button title="backstop test">запустить тест(dev)</button>
+          </div>
+          <button title="">Добавить тест</button>
+        </div>
+      </li>
+      <li><a href="main.html" id="main">main</a>
+        <button class="dev js-show-list" style="display:none" data-id="main" title="Список тестов">list</button>
+        <button class="dev" style="display:none" title="запустить тесты для страницы backstop test">test page(dev)</button>
+        <div style="display:none" id="main-list">TODO список тестов для данной страницы
+          <div><span> название теста</span>
+            <button title="backstop test">запустить тест(dev)</button>
+          </div>
+          <button title="">Добавить тест</button>
+        </div>
+      </li>
+    </ul>
+    <input type="checkbox" id="develop">
+  </body>
+</html>

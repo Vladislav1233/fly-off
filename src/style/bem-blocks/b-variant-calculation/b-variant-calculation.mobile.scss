@@ -1,0 +1,25 @@
+/* 320++  */
+.b-variant-calculation {
+    margin-bottom: 54px;
+
+    &__item {
+
+        &:not(:last-child) {
+            margin-bottom: 65px;
+        }
+    }
+
+    &__list {
+        margin: 0px -7px;
+    }
+
+    &__title {
+        font-size: 36px;
+        line-height: 50px;
+        font-family: 'panton-light';
+        color: #004880;
+        text-align: center;
+        text-transform: uppercase;
+        margin-bottom: 80px;
+    }
+}

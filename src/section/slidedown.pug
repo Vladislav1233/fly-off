@@ -1,0 +1,9 @@
+mixin slidedown(title)
+    +b.slidedown&attributes(attributes)
+        +e.head
+            +e.title #{title}
+            +e.icon
+        
+        +e.content
+            +e.wrapper
+                block

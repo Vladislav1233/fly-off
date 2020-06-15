@@ -1,0 +1,25 @@
+/* 768++  */
+.b-feedback {
+    padding-top: 160px;
+    padding-bottom: 73px;
+
+    &__form {
+        display: flex;
+        justify-content: center;
+        margin-left: -19px;
+        margin-top: 31px;
+        margin-bottom: 9px;
+    }
+
+    &__form-item {
+        max-width: 260px;
+        padding-left: 19px;
+        width: calc(100% / 3);
+    }
+
+    &__personal-info {
+        div {
+            display: inline-block;
+        }
+    }
+}

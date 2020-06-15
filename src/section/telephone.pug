@@ -1,0 +1,3 @@
+mixin telephone(num = '+7 (495) 987-18-38', href = '+74959871838')
+    +b('a')(href="tel:" + href, title="Позвонить").telephone&attributes(attributes)
+        | #{num}

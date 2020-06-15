@@ -1,0 +1,12 @@
+@font-face {
+    font-family: "Futura PT Demi";
+    src: url("futura-demi.eot"); /* IE9 */
+    src: url("futura-demi.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+    url("futura-demi.woff") format("woff"), /* chrome, firefox */
+    url("futura-demi.ttf") format("truetype"), /* chrome, firefox, opera, Safari, Android, iOS 4.2+ */
+    url("futura-demi.svg#Futura PT Demi") format("svg"); /* iOS 4.1- */
+    font-style: normal;
+    font-weight: normal;
+}
+
+

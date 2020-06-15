@@ -1,0 +1,11 @@
+mixin nav-footer(data, isNotNav=false)
+    - var tag = isNotNav ? 'div' : 'nav';
+
+    +b(tag).nav-footer&attributes(attributes)
+        +e('ul').list
+            each item in data
+                +e.item
+                    if item.href
+                        +e('a')(href=item.href, title=item.name).name #{item.name}
+                    else
+                        +e('span').name.--without-underline #{item.name}

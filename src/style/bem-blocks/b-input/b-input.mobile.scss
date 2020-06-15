@@ -1,0 +1,26 @@
+/* 320++  */
+.b-input {
+    
+    &__input-field {
+        border: 1px solid #3CB3E6;
+        height: 60px;
+        background-color: #fff;
+        font-size: 18px;
+        line-height: 24px;
+        color: #464646;
+        font-family: 'futura-book';
+        padding: 0px 16px;
+
+        &:disabled {
+            background-color: #eee;
+        }
+    }
+
+    &--calc & {
+
+        &__input-field {
+            height: 50px;
+            border-color: #ccc;
+        }
+    }
+}

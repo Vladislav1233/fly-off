@@ -1,0 +1,40 @@
+/* 320++  */
+$b-nav-footer-color: #41B6E6;
+
+.b-nav-footer {
+    font-style: normal;
+
+    &__list {
+        padding-left: 0;
+    }
+
+    &__item {
+        list-style-type: none;
+
+        &:not(:last-child) {
+            margin-bottom: 19px;
+        }
+
+        .b-nav-footer--address & {
+            &:not(:last-child) {
+                margin-bottom: 10px;
+            }
+        }
+    }
+
+    &__name {
+        font-size: 20px;
+        color: $b-nav-footer-color;
+        transition: color $animation-time;
+        line-height: 0.5;
+
+        &:not(span) {
+            text-decoration: underline;
+
+            .no-touchevents &:hover,
+            .touchevents &:active {
+                color: darken($b-nav-footer-color, 20%);
+            }
+        }    
+    }
+}

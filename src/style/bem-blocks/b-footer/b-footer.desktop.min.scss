@@ -1,0 +1,17 @@
+.b-footer {
+    padding: 47px 0 30px;
+
+    &__quote,
+    &__social,
+    &__nav {
+        width: 35%;
+        padding-left: 5px;
+    }
+
+    &__logo,
+    &__tel,
+    &__contact-info {
+        width: 65%;
+        padding-right: 40px;
+    }
+}

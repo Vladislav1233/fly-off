@@ -1,0 +1,45 @@
+/* 320++  */
+.b-radio {
+    background-color: #41b6e6;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+
+    &--large {
+        padding: 6px;
+    }
+
+    &__wrapper {
+        &:not(:last-child) {
+            margin-bottom: 10px;
+        }
+    }
+
+    &__field {
+        display: none;
+    }
+
+    &__label {
+        font-size: 14px;
+        color: #fff;
+        border-radius: 20px;
+        padding: 2px 24px;
+        transition-property: color, background-color;
+        transition-duration: $animation-time;
+        text-align: center;
+        cursor: pointer;
+    }
+
+    &__field:checked + &__label {
+        background-color: #fff;
+        color: #181818;
+    }
+
+    &--large & {
+        
+        &__label {
+            padding: 11px 36px;
+        }
+    }
+}

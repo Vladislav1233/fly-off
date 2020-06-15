@@ -1,0 +1,22 @@
+/* 768++  */
+.b-slidedown {
+    margin: 0px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+    &--column & {
+        &__wrapper {
+            font-size: 0;
+        }
+
+        &__item {
+            display: inline-block;
+            width: 50%;
+            vertical-align: middle;
+        }
+    }
+
+    .b-checkbox__text {
+        font-size: 16px;
+    }
+}

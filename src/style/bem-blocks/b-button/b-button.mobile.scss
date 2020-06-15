@@ -1,0 +1,29 @@
+/* 320 + */
+.b-button {
+    background-color: #41B6E6;
+    color: #fff;
+    text-align: center;
+    font-size: 24px;
+    line-height: 1;
+    padding: 18px 20px 18px;
+    display: block;
+    transition: $animation-time;
+    border: none;
+    width: 100%;
+
+    .no-touchevents &:hover,
+    .touchevents &:active {
+        background-color: darken(#41B6E6, 10%);
+        color: #fff;
+    }
+
+    &--feedback {
+        font-size: 18px;
+        line-height: 24px;
+        height: 100%;
+    }
+
+    &--font-small {
+        font-size: 16px;
+    }
+}

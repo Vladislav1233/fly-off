@@ -1,0 +1,22 @@
+/* 320++  */
+.b-scope {
+    padding-left: 0;
+
+    &__item {
+        list-style-type: none;
+        max-width: 320px;
+        margin: 0px auto 62px;
+    }
+
+    &__text {
+        @include scope-paragraph;
+    }
+
+    &__icon {
+        margin-bottom: 10px;
+        height: 58px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}

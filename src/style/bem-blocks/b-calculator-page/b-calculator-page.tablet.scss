@@ -1,0 +1,39 @@
+/* 768++  */
+.b-calculator-page {
+
+    &__group-inline {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    &__group {
+
+        &--inline {
+            width: 215px;
+        }
+    }
+
+    &__checkbox-group {
+        margin-left: -45px;
+        font-size: 0;
+    }
+
+    &__checkbox-item {
+        width: 50%;
+        display: inline-block;
+        vertical-align: top;
+        padding-left: 45px;
+    }
+
+    &__back {
+        font-size: 24px;
+    }
+
+    &__form {
+
+        &--range {
+            max-width: 638px;
+        }
+    }
+}

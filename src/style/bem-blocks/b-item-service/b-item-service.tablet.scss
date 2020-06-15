@@ -1,0 +1,12 @@
+/* 768++  */
+.b-item-service {
+    display: flex;
+    align-items: flex-start;
+    text-align: left;
+
+    &__icon {
+        margin-bottom: 0;
+        margin-top: -3px;
+        margin-right: 10px;
+    }
+}

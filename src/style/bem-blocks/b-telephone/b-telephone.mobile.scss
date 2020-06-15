@@ -1,0 +1,15 @@
+/* 320++  */
+$b-telephone-color: #004880;
+
+.b-telephone {
+    font-family: 'futura-demi';
+    color: $b-telephone-color;
+    font-size: 20px;
+    line-height: 1;
+    transition: color $animation-time;
+
+    .no-touchevents &:hover,
+    .touchevents &:active {
+        color: lighten($b-telephone-color, 20%);
+    }
+}

@@ -1,0 +1,49 @@
+/* 320++  */
+$b-nav-link-color: #41B6E6;
+
+.b-nav {
+    background-color: #fff;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 1000;
+    padding: 20px;
+    touch-action: none;
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity $animation-time;
+
+    &__list {
+        padding-left: 0;
+        margin-bottom: 20px;
+    }
+
+    &__item {
+        list-style-type: none;
+
+        &:not(:last-child) {
+            margin-bottom: 10px;
+        }
+    }
+
+    &__link {
+        font-family: 'futura-book';
+        font-size: 24px;
+        line-height: 31px;
+        color: $b-nav-link-color;
+        transition: color $animation-time;
+        
+        .no-touchevents &:hover,
+        .touchevents &:active {
+            color: darken($b-nav-link-color, 20%);
+        }
+    }
+
+    &.active {
+        opacity: 1;
+        touch-action: auto;
+        pointer-events: all;
+    }
+}

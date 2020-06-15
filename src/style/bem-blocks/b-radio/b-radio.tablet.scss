@@ -1,0 +1,22 @@
+/* 768++  */
+.b-radio {
+    display: inline-flex;
+    flex-direction: row;
+
+    &--large {
+        border-radius: 36px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__wrapper {
+        &:not(:last-child) {
+            margin-bottom: 0;
+        }
+    }
+
+    &__label {
+        text-align: left;
+    }
+}

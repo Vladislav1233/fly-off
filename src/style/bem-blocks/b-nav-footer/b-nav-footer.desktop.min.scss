@@ -1,0 +1,12 @@
+/* 1024++  */
+.b-nav-footer {
+
+    &:not(.b-nav-footer--address) &__item {
+        &:nth-last-child(1), 
+        &:nth-last-child(2) {
+            .b-nav-footer__name {
+                font-size: 24px;
+            }
+        }
+    }
+}

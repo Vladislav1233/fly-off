@@ -1,0 +1,27 @@
+mixin item-service(name, price)
+    +b.item-service
+        +e.icon
+            <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="15" cy="15" r="14.5" stroke="#EB6907"/>
+                <path d="M8 17.5L13.5 21.5L22.5 9.5" stroke="#EB6907" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+        
+        +e.info
+            +e('p').name #{name}
+
+            +e('p').price #{price}
+
+mixin incoming-service(data)
+    +b.incoming-service
+        +e.title Включено
+
+        +e('ul').list
+            each item in data
+                +e.item
+                    +item-service(item.name, item.price)
+        
+        +e.additional-info
+            +e('p') 
+                | *1 человек, Шенгенская зона, 7 ночей
+            +e('p') 
+                | **Кроме неполучения визы

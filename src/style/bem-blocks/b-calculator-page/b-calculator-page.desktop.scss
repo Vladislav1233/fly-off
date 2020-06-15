@@ -1,0 +1,23 @@
+/* 1360++  */
+.b-calculator-page {
+    padding-left: calc((100vw - 815px) / 2);
+
+    &__back {
+        position: absolute;
+        left: calc((100vw - 1230px) / 2);
+        padding-left: 0;
+    }
+
+    &__title {
+        margin: 47px 0px;
+        padding: 0;
+    }
+
+    &__form {
+        padding: 0 45px 0px 0px;
+    }
+
+    &__group-name {
+        padding-left: 10px;
+    }
+}

@@ -1,0 +1,64 @@
+/* 320++  */
+.b-presentation {
+    margin-bottom: 64px;
+
+    &__proposal {
+        background-image: url('../../../images/inhtml/proposal-back-mobile.svg');
+        background-repeat: no-repeat;
+        background-size: 100%;
+        background-position: center top;
+        text-align: center;
+        padding: 32px 0px;
+        margin: 0px auto;
+        text-align: center;
+        width: 296px;
+    }
+
+    &__proposal-title {
+        margin: 0;
+        color: #EB6907;
+        font-family: 'panton-black';
+        font-size: 45px;
+        line-height: 1;
+        text-transform: uppercase;
+        margin-bottom: 5px;
+    }
+
+    &__proposal-price {
+        font-family: 'panton-light';
+        font-size: 24px;
+        line-height: 1;
+        color: #004880;
+        padding-left: 30px;
+        text-transform: uppercase;
+
+        span {
+            font-size: 60px;
+            font-family: 'panton-black';
+            vertical-align: middle;
+        }
+    }
+
+    &__for-someone-text {
+        font-family: 'panton-light';
+        font-size: 24px;
+        line-height: 1;
+        color: #004880;
+        margin: 0;
+        text-transform: uppercase;
+    }
+
+    &__for-someone {
+        text-align: center;
+    }
+
+    &__image-wrapper {
+        overflow: hidden;
+        margin-top: -71px;
+        margin-bottom: 34px;
+        height: 430px;
+        background-size: 940px;
+        background-position: -160px top;
+        background-repeat: no-repeat;
+    }
+}

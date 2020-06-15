@@ -1,0 +1,41 @@
+/* 768++  */
+.b-presentation {
+    position: relative;
+    min-height: 540px;
+    margin-bottom: 38px;
+
+    &__proposal {
+        background-image: url('../../../images/inhtml/proposal-back.svg');
+        width: 405px;
+        padding-top: 42px;
+        padding-bottom: 25px;
+    }
+    
+    &__proposal-title {
+        font-size: 60px;
+    }
+
+    &__for-someone {
+        margin-bottom: -35px;
+    }
+
+    &__image-wrapper {
+        position: absolute;
+        top: -120px;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        height: auto;
+        background-size: cover;
+        margin: 0;
+        background-position: -290px bottom;
+    }
+
+    &__content {
+        position: relative;
+        z-index: 1;
+        width: 420px;
+        margin-left: auto;
+        padding-top: 16px;
+    }
+}

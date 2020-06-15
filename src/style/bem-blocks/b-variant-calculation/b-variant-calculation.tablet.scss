@@ -1,0 +1,29 @@
+/* 768++  */
+.b-variant-calculation {
+    margin-bottom: -35px;
+
+    &__list {
+        margin-left: -35px;
+        margin-right: 0;
+        font-size: 0;
+    }
+
+    &__item {
+        padding-left: 35px;
+        display: inline-block;
+        vertical-align: top;
+        width: 50%;
+
+        &:first-child {
+            .b-item-calculate__name {
+                font-size: 18px;
+                line-height: 26px;
+            }
+        }
+        margin-bottom: 86px;
+
+        &:not(:last-child) {
+            margin-bottom: 86px;
+        }
+    }
+}

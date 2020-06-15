@@ -1,0 +1,40 @@
+/* 320++  */
+.b-social {
+
+    &__title {
+        font-size: 18px;
+        line-height: 22px;
+        color: #ccc;
+        margin-bottom: 15px;
+    }
+
+    &__list {
+        padding-left: 0;
+        margin-left: -20px;
+    }
+
+    &__item {
+        list-style-type: none;
+        display: inline-block;
+        vertical-align: top;
+        margin-left: 20px;
+        font-size: 0;
+        line-height: 0;
+    }
+
+    &__icon {
+        svg {
+            transition: fill $animation-time;
+            fill: #41B6E6;
+        }
+    }
+
+    &__link {
+        .no-touchevents &:hover,
+        .touchevents &:active {
+            svg {
+                fill: darken(#41B6E6, 20%);
+            }
+        }
+    }
+}

@@ -1,0 +1,13 @@
+{
+  "name": "my-awesome-package",
+  "version": "1.0.0",
+  "license": "MIT",
+  "dependencies": {
+    "air-datepicker": "^2.2.3",
+    "html5shiv": "^3.7.3",
+    "ion-rangeslider": "^2.3.0",
+    "jquery": "^3.3.1",
+    "normalize-css": "^2.3.1",
+    "responsive-tabs": "^1.6.3"
+  }
+}

@@ -1,0 +1,23 @@
+/* 768++  */
+.b-incoming-service {
+    padding-top: 0px;
+    padding-left: 35px;
+
+    &__additional-info {
+        margin-left: -28px;
+
+        p {
+            display: inline-block;
+            padding-left: 28px;
+        }
+    }
+
+    &__list {
+        margin-left: 0;
+        margin-bottom: -6px;
+    }
+
+    &__title {
+        margin-bottom: 20px;
+    }
+}

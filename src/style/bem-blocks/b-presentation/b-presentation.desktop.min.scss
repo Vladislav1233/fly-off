@@ -1,0 +1,51 @@
+/* 1024++  */
+.b-presentation {
+
+    &__for-someone-text {
+        display: inline-block;
+        vertical-align: bottom;
+        margin-right: 10px;
+        padding-bottom: 9px;
+    }
+
+    &__for-someone {
+        margin-bottom: 15px;
+        padding-left: 35px;
+    }
+
+    &__logo-add-company {
+        vertical-align: bottom;
+    }
+
+    &__proposal-title {
+        font-size: 90px;
+        margin-bottom: 0;
+    }
+
+    &__proposal-price {
+
+        span {
+            font-size: 90px;
+        }
+    }
+
+    &__content {
+        width: 620px;
+        padding-top: 0;
+        margin-top: -20px;
+        padding-bottom: 9px;
+    }
+
+    &__proposal {
+        width: 100%;
+        padding-top: 16px;
+    }
+
+    &__image-wrapper {
+        background-position: -264px bottom;
+
+        @media (min-width: 1150px) {
+            background-position: -75px bottom;
+        }
+    }
+}

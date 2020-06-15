@@ -1,0 +1,12 @@
+include ./tooltip
+
+mixin checkbox(name, id, title, js, tooltip)
+    +b.checkbox( class!=attributes.class )
+        +e('input').input( type="checkbox", name=name, id=id, value=title, class=(js ? js : '') )
+        +e('label').name( for=id, class!=attributes.class )
+            if title
+                +e('span').text !{title}
+                
+                if tooltip
+                    +tooltip('Подсказка', false).--question
+        block

@@ -1,0 +1,1 @@
+"use strict";var hamburger=$(".js-hamburger"),menu=$(".js-nav");hamburger.click(function(e){hamburger.hasClass("active")?(menu.removeClass("active"),hamburger.removeClass("active"),$("html").css({overflow:""})):(menu.addClass("active"),hamburger.addClass("active"),$("html").css({overflow:"hidden"}))});

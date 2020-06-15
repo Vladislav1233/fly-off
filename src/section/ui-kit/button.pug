@@ -1,0 +1,8 @@
+mixin button(tag, text)
+    +b(tag).button(href=(tag == 'a' ? 'javascript:void(0);' : false) title=(tag == 'a' ? text : false))&attributes(attributes) #{text}
+
+//- variables:
+//- tag - html тэг (a or button)
+//- text - текст блока
+//- если нужно disabled или модификатор для кнопки, то используется &attributes(attributes).
+//- example: +button('button', 'Кнопка')(class = "--modif" disabled)

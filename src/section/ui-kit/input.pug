@@ -1,0 +1,8 @@
+mixin input(id, type, placeholder, name, js, value, autocomplete, error, label)
+    +b.input(class!=attributes.class)
+        +e('input').input-field&attributes( attributes )(id=id, type=type, placeholder=placeholder, name=name, value=value, autocomplete=autocomplete class=js )
+        if label
+            +b('label').label.--input(for=id) #{label}
+        if error
+            +b.error.js-error #{error}
+        block

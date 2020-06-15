@@ -1,0 +1,19 @@
+.b-header {
+    position: relative;
+    z-index: 11;
+
+    &__content {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        padding-top: 20px;
+    }
+
+    &__logo {
+        width: 205px;
+    }
+
+    &__tel {
+        display: none;
+    }
+}

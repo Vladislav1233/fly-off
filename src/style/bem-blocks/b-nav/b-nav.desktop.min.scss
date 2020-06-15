@@ -1,0 +1,23 @@
+/* 1024++  */
+.b-nav {
+    position: static;
+    background: transparent;
+    opacity: 1;
+    pointer-events: all;
+    touch-action: auto;
+    padding: 0;
+
+    &__list,
+    &__item:not(:last-child) {
+        margin-bottom: 0;
+    }
+
+    &__item {
+        display: inline-block;
+        vertical-align: top;
+        
+        &:not(:last-child) {
+            margin-right: 42px;
+        }
+    }
+}

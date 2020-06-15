@@ -1,0 +1,31 @@
+/* 320++  */
+.b-range-group {
+
+    &__check {
+        margin-bottom: 32px;
+    }
+
+    &__range-wrapper {
+        margin-bottom: 32px;
+    }
+
+    .irs--flat {
+        .irs-single {
+            font-size: 14px;
+            background-color: #41b6e6;
+            top: -8px;
+
+            &:before {
+                border-top-color: #41b6e6;
+            }
+        }
+
+        .irs-bar {
+            background-color: #41b6e6;
+        }
+        
+        .irs-handle>i:first-child {
+            background-color: #41b6e6;
+        }
+    }
+}

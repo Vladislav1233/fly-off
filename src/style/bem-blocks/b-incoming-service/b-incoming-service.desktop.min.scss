@@ -1,0 +1,26 @@
+/* 1024++  */
+.b-incoming-service {
+
+    &__list {
+        display: flex;
+        justify-content: space-between;
+        margin-right: 0;
+        margin-bottom: -15px;
+    }
+
+    &__item {
+        width: auto;
+        padding: 0;
+    }
+
+    &__additional-info {
+        margin: 0;
+
+        p {
+            padding-left: 0;
+            display: block;
+            text-align: center;
+            margin: 0;
+        }
+    }
+}

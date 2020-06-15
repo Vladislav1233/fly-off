@@ -1,0 +1,35 @@
+include ../../section/ui-kit/logo
+include ../../section/nav
+include ../../section/ui-kit/hamburger
+include ../../section/telephone
+
+
+block variables
+
+mixin header()
+    +b('header').header
+        .b-container
+            +e.content
+                +e.logo
+                    include ../../section/ui-kit/logo.pug
+                    +logo()
+
+                +e.content-right
+
+                    +e.tel
+                        +telephone()
+                    +e.hamburger
+                        +hamburger()(class=file_name==='calculator' ? '--color' : '', class="js-hamburger")
+
+                    +e.nav
+                        include ../../section/nav.pug
+                        +nav([{
+                            href: '/o-kompanii/',
+                            name: 'О компании'
+                        }, {
+                            href: '#buy-policy',
+                            name: 'Купить полис'
+                        }, {
+                            href: '#feedback',
+                            name: 'Обратная связь'
+                        }])

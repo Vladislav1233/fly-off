@@ -1,0 +1,32 @@
+// 320 +
+.b-footer {
+    padding: 40px 0px 50px;
+
+    &__logo {
+        width: 205px;
+        margin-bottom: 20px;
+    }
+
+    &__tel {
+        margin-bottom: 8px;
+    }
+
+    &__contact-info {
+        margin-bottom: 36px;
+    }
+
+    &__nav {
+        margin-bottom: 20px;
+    }
+
+    &__social {
+        margin-bottom: 26px;
+    }
+
+    &__quote {
+        font-size: 24px;
+        line-height: 30px;
+        color: #004880;
+        margin: 0;
+    }
+}

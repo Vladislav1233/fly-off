@@ -1,0 +1,6 @@
+block variables
+
+mixin logo(href=file_name != 'main' ? '/' : '')
+    - var tag = href ? 'a' : 'span';
+    +b(tag).logo(href=href ? href : false, title=href ? 'Абсолют страхование' : false)
+        img(src="./images/inhtml/logo.png", alt="Логотип абсолют страхование") 

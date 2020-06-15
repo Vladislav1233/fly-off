@@ -1,0 +1,61 @@
+/* 320++  */
+.b-slidedown {
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin: 0px -10px;
+
+    &__head {
+        position: relative;
+    }
+
+    &__icon {
+        position: absolute;
+        top: 3px;
+        right: 0;
+        transform: rotate(180deg);
+        display: block;
+        width: 35px;
+        height: 18px;
+        transition: transform $animation-time;
+
+        &::before,
+        &::after {
+            content: '';
+            display: block;
+            position: absolute;
+            width: 0;
+            height: 0;
+            border-left: 17px solid transparent;
+            border-right: 17px solid transparent;
+            border-bottom: 17px solid #41b6e6;
+            top: 0;
+            right: 0;
+        }
+
+        &::after {
+            border-left: 16px solid transparent;
+            border-right: 16px solid transparent;
+            border-bottom: 16px solid #fff;
+            top: 4px;
+            right: 1px;
+            // transform: translate(-50%, calc(50% + 4px));
+        }
+
+        .active & {
+            transform: rotate(0deg);
+        }
+    }
+
+    &__title {
+        font-size: 24px;
+        color: #181818;
+    }
+
+    &__item {
+        margin-bottom: 28px;
+    }
+
+    &__wrapper {
+        padding-top: 23px;
+    }
+}

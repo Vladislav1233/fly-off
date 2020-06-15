@@ -1,0 +1,14 @@
+/* 1360++  */
+.b-presentation {
+    &__image-wrapper {
+        background-position: left bottom;
+    }
+
+    &__content {
+        margin-right: calc((100vw - 1290px) / 2);
+    }
+
+    &__for-someone {
+        padding-left: 0;
+    }
+}

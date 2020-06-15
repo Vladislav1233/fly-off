@@ -1,0 +1,53 @@
+// 768+
+.b-footer {
+    padding: 58px 0 20px;
+
+    &__logo,
+    &__tel,
+    &__contact-info {
+        width: 60%;
+    }
+
+    &__quote,
+    &__social,
+    &__nav {
+        width: 40%;
+        padding-left: 28px;
+    }
+    
+
+    &__content {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    &__logo,
+    &__quote {
+        margin-bottom: 26px;
+    }
+
+    &__tel,
+    &__social {
+        margin-bottom: 40px;
+    }
+
+    &__quote {
+        order: 1;
+    }
+
+    &__tel { 
+        order: 2;
+    }
+
+    &__social {
+        order: 3;
+    }
+
+    &__contact-info {
+        order: 4;
+    }
+
+    &__nav {
+        order: 5;
+    }
+}
