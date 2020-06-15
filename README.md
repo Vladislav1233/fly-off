@@ -1,3 +1,18 @@
+# Обзор проекта
+Landing page для для компании "Слетать.ру", занимающейся поиском, сравнением цен и бронированием туров.
+
+## Веб страницы
+
+- [Главная](https://vladislav1233.github.io/fly-off/build/main.html "Главная")
+- [Калькулятор расчетов](https://vladislav1233.github.io/fly-off/build/calculator.html "Калькулятор расчетов")
+
+## Технологии
+- Pug (ex. jade) / HTML5
+- Less / CSS3
+- БЭМ (методология)
+- Javascript / Jquery
+
+# Развернуть проект
 
 ## Должно быть установлено ##
 
